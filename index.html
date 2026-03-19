@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Tampa 360 Photo Booth & Drone Videography | Blue Moon Studios</title>
+  <meta name="description" content="Elevate your event with Blue Moon Studios. We provide premium 360 photo booths, 4K drone cinematography, and AI-enhanced event photography in Tampa, St. Pete, and Orlando.">
+  <meta name="keywords" content="360 photo booth Tampa, drone videography Orlando, event photography St. Pete, wedding drone video Florida, AI photo booth, party rentals Tampa">
+  <meta name="author" content="Blue Moon Studios">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://yourusername.github.io/bluemoon-studios/">
+
+  <meta property="og:title" content="Tampa's Premier 360 Photo Booth & Drone Videography">
+  <meta property="og:description" content="Make your next event unforgettable with 360 video, drone coverage, and AI photo booths in Tampa Bay and Central Florida.">
+  <meta property="og:image" content="header.png"> <meta property="og:url" content="https://yourusername.github.io/bluemoon-studios/">
+  <meta property="og:type" content="website">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Blue Moon Studios",
+    "description": "Premium 360 photo booths, aerial drone cinematography, and AI event photography services.",
+    "image": "bluemoon_logo.png",
+    "areaServed": [
+      {"@type": "City", "name": "Tampa"},
+      {"@type": "City", "name": "St. Petersburg"},
+      {"@type": "City", "name": "Orlando"}
+    ],
+    "priceRange": "$$",
+    "url": "https://yourusername.github.io/bluemoon-studios/",
+    "sameAs": [
+      "https://www.instagram.com/bluemoonstudiosservices/",
+      "https://www.facebook.com/people/Blu-Moon/61588332764907/",
+      "https://linktr.ee/bluemoonstudiosservices"
+    ]
+  }
+  </script>
+
+  <link rel="icon" href="bluemoon_logo.png" type="image/png">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+    /* :::: CSS Variables (Dark Mode Default) :::: */
+    :root {
+      --primary-blue: #1e40af;
+      --accent-blue: #3b82f6;
+      --promo-gradient: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+      
+      /* Dark Theme Colors */
+      --bg-main: #020617; 
+      --bg-card: #0f172a; 
+      --bg-input: #1e293b; 
+      --bg-light-blue: #061124; 
+      --text-main: #f8fafc; 
+      --text-muted: #94a3b8; 
+      --heading-color: #ffffff; 
+      --border-color: #334155; 
+      --border-light: #1e293b; 
+    }
+
+    /* Global Styles & Reset */
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; overflow-x: hidden; }
+    body {
+      font-family: 'Inter', sans-serif;
+      font-size: 1.15rem; 
+      color: var(--text-main);
+      background-color: var(--bg-main);
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden; 
+    }
+    
+    a, a:hover, a:focus, a:active { text-decoration: none !important; }
+    h1, h2, h3, h4 { color: var(--heading-color); font-weight: 800; letter-spacing: -0.025em; margin-top: 0; }
+    p { color: var(--text-muted); }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 25px; }
+    .text-center { text-align: center; }
+    .blue-text { color: var(--accent-blue); } 
+    .section-padding { padding: 100px 20px; }
+    .section-subtitle { text-align: center; max-width: 650px; margin: 0 auto 60px auto; font-size: 1.25rem; font-weight: 400;}
+    .bg-light-blue { background-color: var(--bg-light-blue); }
+
+    /* :::: EXIT INTENT POPUP MODAL :::: */
+    .exit-intent-overlay {
+      position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+      background: rgba(2, 6, 23, 0.9); backdrop-filter: blur(10px);
+      z-index: 999999; display: none; align-items: center; justify-content: center;
+    }
+    .exit-intent-box {
+      background: var(--bg-card); padding: 50px; border-radius: 16px;
+      border: 2px solid var(--accent-blue); max-width: 500px; text-align: center;
+      box-shadow: 0 25px 50px rgba(0,0,0,0.8); position: relative;
+      animation: popIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    .exit-close {
+      position: absolute; top: 15px; right: 20px; font-size: 2rem;
+      color: var(--text-muted); cursor: pointer; line-height: 1;
+    }
+
+    /* :::: FLEXIBLE BEFORE & AFTER SLIDER WIDGET :::: */
+    .ba-wrapper {
+      position: relative; width: 100%; max-width: 800px; margin: 0 auto;
+      border-radius: 16px; box-shadow: 0 20px 40px rgba(0,0,0,0.4); 
+      border: 2px solid var(--border-light); overflow: hidden; line-height: 0;
+    }
+    .ba-image { display: block; width: 100%; height: auto; pointer-events: none; }
+    .ba-overlay {
+      position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+      clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+      pointer-events: none; z-index: 2;
+    }
+    .ba-slider-input {
+      position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+      opacity: 0; cursor: ew-resize; z-index: 10; margin: 0;
+    }
+    .ba-handle-line {
+      position: absolute; top: 0; left: 50%; width: 4px; height: 100%;
+      background: white; transform: translateX(-50%); pointer-events: none;
+      z-index: 5; display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 0 15px rgba(0,0,0,0.6);
+    }
+    .ba-handle-btn {
+      width: 45px; height: 45px; background: var(--accent-blue); border-radius: 50%;
+      border: 3px solid white; display: flex; align-items: center; justify-content: center;
+      color: white; font-size: 1.2rem;
+    }
+
+    /* :::: INTERACTIVE CALCULATOR WIDGET :::: */
+    .calc-wrapper {
+      background: var(--bg-card); max-width: 800px; margin: 60px auto 0 auto;
+      padding: 40px; border-radius: 16px; border: 1px solid var(--border-light);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    }
+    .calc-row { margin-bottom: 25px; }
+    .calc-row label { color: var(--heading-color); font-weight: 700; font-size: 1.1rem; margin-bottom: 10px; display: block;}
+    .calc-total-box {
+      background: var(--bg-input); padding: 25px; border-radius: 12px;
+      text-align: center; margin-top: 30px; border: 2px dashed var(--accent-blue);
+    }
+    .calc-total-price { font-size: 3rem; font-weight: 900; color: white; display: block; margin: 10px 0;}
+    
+    .radio-group input[type="radio"], .checkbox-group input[type="checkbox"] { margin-right: 10px; transform: scale(1.2); }
+    .radio-group label, .checkbox-group label { font-weight: normal; font-size: 1rem; color: var(--text-main); cursor: pointer; display: inline-flex; align-items: center; margin-right: 20px;}
+    .slider-container input[type="range"] { width: 100%; accent-color: var(--accent-blue); }
+
+    /* :::: CUSTOM POPUP ANIMATION :::: */
+    @keyframes popIn { 0% { transform: scale(0.8); opacity: 0; } 100% { transform: scale(1); opacity: 1; } }
+
+    /* :::: THE FLYING DRONE ANIMATIONS :::: */
+    .drone-wrapper { position: fixed; top: 25%; left: -200px; z-index: 99998; color: var(--heading-color); font-size: 3.5rem; filter: drop-shadow(0 15px 15px rgba(0,0,0,0.8)); animation: droneFlight 20s ease-in-out forwards; pointer-events: none; }
+    .prop { position: absolute; top: -5px; width: 45px; height: 4px; background: var(--text-muted); border-radius: 5px; animation: spinProps 0.1s linear infinite; }
+    .prop-left { left: -15px; } .prop-right { right: -15px; }
+    @keyframes spinProps { 0% { transform: rotateY(0deg); } 100% { transform: rotateY(360deg); } }
+    .lens-flash { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 20px; height: 20px; background: rgba(255,255,255,0.9); border-radius: 50%; box-shadow: 0 0 60px 40px rgba(255,255,255,0.9); opacity: 0; animation: flashEffect 20s ease-in-out forwards; }
+    
+    @keyframes droneFlight {
+      0% { transform: translate(-200px, 0) rotate(15deg); opacity: 1; visibility: visible; }
+      15% { transform: translate(30vw, 80px) rotate(-5deg); opacity: 1; visibility: visible; }
+      25% { transform: translate(50vw, 30px) rotate(0deg) scale(1.2); opacity: 1; visibility: visible; } 
+      28% { transform: translate(50vw, 30px) rotate(0deg) scale(1.2); opacity: 1; visibility: visible; } 
+      40% { transform: translate(150vw, -100px) rotate(-20deg); opacity: 1; visibility: visible; } 
+      41% { transform: translate(150vw, -100px) rotate(-20deg); opacity: 0; visibility: hidden; } 
+      100% { transform: translate(150vw, -100px); opacity: 0; visibility: hidden; } 
+    }
+    @keyframes flashEffect {
+      0%, 25% { opacity: 0; transform: translate(-50%, -50%) scale(0.5); }
+      26% { opacity: 1; transform: translate(-50%, -50%) scale(2.5); } 
+      28%, 100% { opacity: 0; transform: translate(-50%, -50%) scale(0.5); }
+    }
+
+    /* :::: BUTTONS & NAVBAR :::: */
+    .btn-blue { background: linear-gradient(135deg, var(--primary-blue), var(--accent-blue)); color: white !important; padding: 12px 28px; border-radius: 8px; font-weight: 600; display: inline-block; border: none; cursor: pointer; box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2); transition: all 0.3s ease; position: relative; overflow: hidden; text-align: center;}
+    .btn-blue:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(37, 99, 235, 0.4); }
+    .btn-outline-white { background-color: transparent; color: white !important; padding: 12px 28px; border-radius: 8px; font-weight: 600; display: inline-block; border: 2px solid rgba(255,255,255,0.3); transition: all 0.3s ease; text-align: center;}
+    .btn-outline-white:hover { border-color: white; background: rgba(255,255,255,0.1); }
+    
+    .navbar-wrapper { background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); position: sticky; top: 0; z-index: 9999; border-bottom: 1px solid rgba(255,255,255,0.05); }
+    .navbar-inner { display: flex; justify-content: space-between; align-items: center; padding: 20px 0; }
+    .nav-brand { display: flex; align-items: center; gap: 15px; font-size: 2.5rem; font-weight: 900; color: white !important; letter-spacing: -0.5px; }
+    .nav-links { display: flex; align-items: center; }
+    .nav-links a { margin-left: 28px; color: white !important; font-weight: 600; font-size: 1.1rem; transition: color 0.2s;}
+    .nav-links a:hover { color: var(--accent-blue) !important; }
+    .nav-links a.btn-blue { margin-left: 28px; color: white !important;} 
+
+    /* :::: LOCATION BANNER & HERO :::: */
+    .location-banner { background: linear-gradient(90deg, rgba(2,6,23,1) 0%, rgba(30,58,138,0.4) 50%, rgba(2,6,23,1) 100%); padding: 18px 0; text-align: center; color: white; font-size: 1.15rem; font-weight: 800; letter-spacing: 3px; text-transform: uppercase; border-top: 1px solid rgba(59, 130, 246, 0.15); border-bottom: 1px solid rgba(59, 130, 246, 0.15); }
+    .location-banner span { color: var(--accent-blue); margin: 0 8px; }
+    .hero { background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 60%, #3b82f6 100%); padding: 120px 20px; color: white; display: flex; justify-content: space-between; align-items: center; gap: 60px; position: relative; overflow: hidden; }
+    .hero-text { flex: 1; max-width: 650px; z-index: 2;}
+    .hero-text h1 { color: white; font-size: 3.5rem; line-height: 1.1; margin-bottom: 25px; font-weight: 900; }
+    .hero-text p { font-size: 1.35rem; margin-bottom: 40px; color: rgba(255,255,255,0.9); font-weight: 400; max-width: 550px;}
+    .hero-image { flex: 1; text-align: right; z-index: 2;}
+    .hero-image img { width: 100%; max-width: 580px; border-radius: 16px; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.1); }
+
+    /* Promo Banner */
+    .promo-banner { background: var(--promo-gradient); padding: 60px 20px; color: white; box-shadow: inset 0 -10px 20px -10px rgba(0,0,0,0.3); }
+    .promo-deadline { display: inline-block; background: rgba(255,255,255,0.2); padding: 10px 20px; border-radius: 50px; font-weight: 700; margin-top: 20px; border: 2px solid rgba(255,255,255,0.4); animation: pulse 2s infinite; }
+    @keyframes pulse { 0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4); } 70% { transform: scale(1.02); box-shadow: 0 0 0 15px rgba(255, 255, 255, 0); } 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 255, 255, 0); } }
+
+    /* Services Grid & Pricing */
+    .grid-services { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 40px; }
+    .service-card { background: var(--bg-card); padding: 40px; border-radius: 16px; display: flex; flex-direction: column; box-shadow: 0 10px 30px -5px rgba(0,0,0, 0.1); border: 1px solid var(--border-light); transition: all 0.3s ease; }
+    .service-card:hover { transform: translateY(-5px); box-shadow: 0 20px 40px -5px rgba(0,0,0, 0.2); }
+    .service-icon-wrapper { display: flex; align-items: center; gap: 15px; margin-bottom: 20px; }
+    .service-icon { background: rgba(59, 130, 246, 0.1); color: var(--accent-blue); width: 48px; height: 48px; border-radius: 10px; display: flex; justify-content: center; align-items: center; font-size: 1.4rem; }
+    .service-card h3 { margin: 0; font-size: 1.45rem; }
+    .service-card p { margin-bottom: 25px; line-height: 1.7; }
+    .check-list { list-style: none; padding: 0; margin: 0; margin-bottom: 25px; flex-grow: 1; }
+    .check-list li { margin-bottom: 12px; font-size: 1.05rem; color: var(--text-main); display: flex; align-items: center; gap: 12px; font-weight: 500;}
+    .check-list i { color: var(--accent-blue); }
+    .service-sample-img { width: 100%; height: 220px; object-fit: cover; border-radius: 12px; margin-top: auto; box-shadow: 0 4px 12px rgba(0,0,0,0.08); transition: transform 0.3s ease;}
+
+    .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; width: 100%; margin: 0 auto;}
+    .pricing-card { background: var(--bg-card); border-radius: 16px; overflow: hidden; box-shadow: 0 20px 40px -10px rgba(0,0,0, 0.15); display: flex; flex-direction: column; border: 1px solid var(--border-color); }
+    .pricing-header { background: linear-gradient(135deg, var(--primary-blue), #0f172a); color: white; padding: 25px; font-size: 1.45rem; font-weight: 800; text-align: center; }
+    .pricing-body { padding: 40px 30px; flex: 1; display: flex; flex-direction: column;}
+    .price { font-size: 3.5rem; font-weight: 900; color: var(--heading-color); margin-bottom: 10px; display: flex; align-items: baseline; justify-content: center;}
+    .price span { font-size: 1.2rem; font-weight: 500; color: var(--text-muted); margin-left: 8px; }
+    .pricing-desc { text-align: center; color: var(--text-muted); margin-bottom: 30px; padding-bottom: 30px; border-bottom: 2px solid var(--border-light);}
+    .pricing-btn { width: 100%; text-align: center; margin-top: auto; padding: 16px; font-size: 1.15rem;}
+
+    /* Comparison Table */
+    .comparison-section { background: #0f172a; color: white; padding: 80px 20px; text-align: center; }
+    .comparison-table { width: 100%; max-width: 900px; margin: 40px auto 0; border-collapse: collapse; background: var(--bg-card); color: var(--text-main); border-radius: 12px; overflow: hidden; box-shadow: 0 15px 40px rgba(0,0,0,0.4); }
+    .comparison-table th, .comparison-table td { padding: 22px; text-align: center; border-bottom: 1px solid var(--border-color); font-size: 1.15rem; }
+    .comparison-table th { background: var(--bg-input); font-weight: 800; font-size: 1.25rem; color: var(--heading-color); }
+    .comparison-table .highlight-col { background: rgba(59, 130, 246, 0.1); font-weight: 800; color: var(--accent-blue); border-left: 3px solid var(--accent-blue); border-right: 3px solid var(--accent-blue); font-size: 1.25rem;}
+    .comparison-table tr:last-child td { border-bottom: none; }
+    .stop-overpaying { color: #ef4444; font-weight: 900; font-size: 2.5rem; margin-top: 20px; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px; animation: pulse 2s infinite;}
+
+    /* Floating Widgets & Footer */
+    .fab-container { position: fixed; bottom: 30px; right: 30px; display: flex; flex-direction: column; gap: 15px; z-index: 99999; }
+    .fab-btn { width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(135deg, var(--primary-blue), var(--accent-blue)); color: white; display: flex; justify-content: center; align-items: center; font-size: 1.5rem; cursor: pointer; box-shadow: 0 4px 15px rgba(0,0,0,0.4); border: none; transition: transform 0.2s ease; }
+    .fab-btn:hover { transform: scale(1.1); }
+    .chat-widget { position: absolute; bottom: 80px; right: 0; width: 350px; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.6); z-index: 99998; display: none; flex-direction: column; overflow: hidden; animation: popIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); text-align: left;}
+    .chat-header { background: linear-gradient(135deg, var(--primary-blue), var(--accent-blue)); padding: 15px; color: white; font-weight: bold; font-size: 1.1rem; display: flex; justify-content: space-between; align-items: center; }
+    .chat-body { padding: 20px; max-height: 400px; overflow-y: auto; font-size: 1rem; color: var(--text-main); }
+    .chat-faq { margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid var(--border-light); }
+    .chat-faq:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0;}
+    .chat-faq strong { color: var(--accent-blue); display: block; margin-bottom: 5px; font-size: 1.05rem;}
+    .chat-close { cursor: pointer; font-size: 1.5rem; line-height: 1; opacity: 0.8; transition: opacity 0.2s; }
+    
+    .site-footer { background-color: var(--bg-card); border-top: 1px solid var(--border-color); padding: 40px 20px; text-align: center; }
+    .footer-content { display: flex; flex-direction: column; align-items: center; gap: 20px; max-width: 1200px; margin: 0 auto; }
+    .footer-brand { font-size: 1.5rem; font-weight: 800; color: white; }
+    .social-links { display: flex; gap: 25px; justify-content: center; }
+    .social-links a { color: var(--text-muted) !important; font-size: 1.8rem; transition: all 0.3s ease; }
+    .social-links a:hover { color: var(--accent-blue) !important; transform: translateY(-4px); }
+    .footer-text { color: var(--text-muted); font-size: 0.95rem; }
+
+    /* Mobile Responsive */
+    @media (max-width: 850px) {
+      .navbar-inner { flex-direction: column; gap: 15px; }
+      .nav-brand { font-size: 2.2rem; }
+      .nav-links { flex-wrap: wrap; justify-content: center; gap: 12px; }
+      .nav-links a { margin-left: 0 !important; font-size: 1.05rem !important; }
+      .nav-links a.btn-blue { margin-top: 5px; }
+      
+      .hero { flex-direction: column; text-align: center; padding: 60px 20px; gap: 30px; }
+      .hero-text h1 { font-size: 2.5rem; }
+      .hero-image { text-align: center; }
+      
+      .chat-widget { width: calc(100vw - 60px); }
+      .calc-total-price { font-size: 2.2rem; }
+    }
+    @media (min-width: 768px) {
+      .footer-content { flex-direction: row; justify-content: space-between; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="exit-intent-overlay" id="exitModal">
+    <div class="exit-intent-box">
+      <div class="exit-close" aria-label="Close" onclick="document.getElementById('exitModal').style.display='none';">&times;</div>
+      <h2 style="color: white; margin-bottom: 20px;">Wait! Don't leave your event to chance.</h2>
+      <p style="color: var(--text-muted); margin-bottom: 30px;">We want to make your night unforgettable. Let's make it affordable, too.</p>
+      <div style="font-size: 2rem; font-weight: 900; color: #34d399; margin-bottom: 30px;">Take 10% Off Your Booking!</div>
+      <button class="btn-blue" style="width: 100%; font-size: 1.2rem; padding: 15px;" onclick="document.getElementById('exitModal').style.display='none'; document.getElementById('contact').scrollIntoView({behavior: 'smooth'});">
+        Claim Discount & Inquire
+      </button>
+    </div>
+  </div>
+
+  <div class="drone-wrapper" aria-hidden="true">
+    <div class="prop prop-left"></div>
+    <div class="prop prop-right"></div>
+    <i class="fa-solid fa-camera"></i>
+    <div class="lens-flash"></div>
+  </div>
+
+  <div class="fab-container">
+    <div class="chat-widget" id="chatWidget">
+      <div class="chat-header">
+        <span><i class="fa-solid fa-robot" style="margin-right: 8px;"></i> Blue Moon Assistant</span>
+        <span class="chat-close" aria-label="Close Chat" onclick="document.getElementById('chatWidget').style.display='none';">&times;</span>
+      </div>
+      <div class="chat-body">
+        <div class="chat-faq"><strong>Q: What are your rates?</strong> A: We charge $75/hr for individual services and $100/hr for the Moonbeam Bundle!</div>
+        <div class="chat-faq"><strong>Q: What is the AI Photobooth?</strong> A: It's a classic photobooth upgraded with Gemini AI! We apply custom thematic transformations to your photos.</div>
+        <div class="chat-faq"><strong>Q: Do you offer discounts?</strong> A: Yes! We have mystery rates for Veterans, Students, Referrals, and Corporate partners.</div>
+        <div class="chat-faq">
+          <strong>Still have questions?</strong>
+          <p>We'd love to chat. Reach out directly!</p>
+          <button class="btn-blue" style="width: 100%; padding: 8px;" onclick="document.getElementById('chatWidget').style.display='none'; document.getElementById('contact').scrollIntoView({behavior: 'smooth'});">Email Us</button>
+        </div>
+      </div>
+    </div>
+    <button class="fab-btn" title="Have Questions?" aria-label="Open FAQ Chat" onclick="var cw = document.getElementById('chatWidget'); cw.style.display = (cw.style.display === 'flex') ? 'none' : 'flex';"><i class="fa-solid fa-comment-dots"></i></button>
+    <button class="fab-btn" title="Back to Top" aria-label="Scroll to top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});"><i class="fa-solid fa-arrow-up"></i></button>
+  </div>
+
+  <nav class="navbar-wrapper">
+    <div class="container navbar-inner">
+      <a href="#" class="nav-brand">
+        <img src="bluemoon_logo.png" height="50px" alt="Blue Moon Studios Logo" onerror="this.style.display='none'">
+        <span><span class="blue-text">Blue Moon</span> Studios</span>
+      </a>
+      <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact Us</a>
+        <a href="#contact" class="btn-blue" style="padding: 10px 22px;"><i class="fa-solid fa-clipboard-list" style="margin-right: 8px;"></i> Book Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="location-banner" data-aos="fade-in">
+    <i class="fa-solid fa-location-dot" style="color: var(--accent-blue); margin-right: 12px;"></i>
+    Tampa <span>•</span> St. Pete <span>•</span> Orlando <span>•</span> And More!
+    <i class="fa-solid fa-location-dot" style="color: var(--accent-blue); margin-left: 12px;"></i>
+  </div>
+
+  <header class="hero">
+    <div class="hero-text">
+      <h1 data-aos="fade-up">Capture the magic with Tampa's top 360 photo booth & drone media.</h1>
+      <p data-aos="fade-up" data-aos-delay="100">Elevate your event from memorable to unforgettable in <span style="color: var(--accent-blue); font-weight: 800;">Tampa, Orlando, and St. Pete!</span> We bring immersive 360-degree video, drones, and AI photo booths straight to your party when the sun goes down.</p>
+      <a href="#services" class="btn-outline-white" data-aos="fade-up" data-aos-delay="200">Explore Services</a>
+    </div>
+    <div class="hero-image" data-aos="fade-left" data-aos-duration="1000">
+      <img src="header.png" alt="Tampa event photography and 360 video booth in action" onerror="this.style.display='none'">
+    </div>
+  </header>
+
+  <main>
+    <section class="promo-banner">
+      <div class="container text-center" data-aos="zoom-in">
+        <h2 style="color: white; font-size: 2.8rem; margin-bottom: 15px;">☀️ Summer Launch Special! ☀️</h2>
+        <p style="color: rgba(255,255,255,0.95); font-size: 1.35rem; max-width: 800px; margin: 0 auto;">We are new in town and building our portfolio. Lock in incredibly low rates for your summer event before prices rise!</p>
+        <div class="promo-deadline"><i class="fa-regular fa-clock" style="margin-right: 10px;"></i> LIMITED TIME: Offer Ends August 31st</div>
+      </div>
+    </section>
+
+    <section class="container section-padding" id="services">
+      <h2 class="text-center" data-aos="fade-up">Our Premium Event Services</h2>
+      <p class="section-subtitle" data-aos="fade-up">Comprehensive media solutions tailored for weddings, festivals, and exclusive celebrations.</p>
+      
+      <div class="grid-services">
+        <div class="service-card" data-aos="fade-up">
+          <div class="service-icon-wrapper"><div class="service-icon"><i class="fa-solid fa-camera-rotate"></i></div><h3>360° Video Experience</h3></div>
+          <p>Guests step onto the platform for a dynamic, high-energy video capture they can share instantly.</p>
+          <ul class="check-list"><li><i class="fa-solid fa-check"></i> Unlimited spins & captures</li><li><i class="fa-solid fa-check"></i> Instant AirDrop/iPad sharing</li></ul>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-icon-wrapper"><div class="service-icon"><i class="fa-solid fa-plane-up"></i></div><h3>Aerial Drone Cinematography</h3></div>
+          <p>Capture the breathtaking scale and energy of your venue from angles impossible from the ground.</p>
+          <ul class="check-list"><li><i class="fa-solid fa-check"></i> 4K HOVERAIR footage</li><li><i class="fa-solid fa-check"></i> Dynamic crowd tracking</li></ul>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-icon-wrapper"><div class="service-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div><h3>AI-Enhanced Photobooth</h3></div>
+          <p>The classic photobooth reimagined with advanced Gemini AI to create unique digital party favors.</p>
+          <div style="background: rgba(59,130,246,0.1); padding: 12px; border-radius: 8px; margin-bottom: 15px; font-size: 0.95rem; border: 1px solid rgba(59,130,246,0.3);"><i class="fa-solid fa-wand-sparkles" style="color: var(--accent-blue);"></i><b> Have personal photos? </b>We offer custom AI edits for non-Blue Moon photos for just $1.50/photo!</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-light-blue">
+      <div class="container section-padding">
+        <h2 class="text-center" data-aos="fade-up">See the Gemini AI Difference</h2>
+        <p class="section-subtitle" data-aos="fade-up">Drag the slider to see how our custom $1.50 AI edits transform standard, dark iPhone photos into glowing, professional masterpieces.</p>
+        
+        <div class="ba-wrapper" data-aos="zoom-in">
+          <img src="after.jpg" class="ba-image" alt="Professionally AI Edited Photo for Event" onerror="this.style.display='none'">
+          <img src="before.jpg" class="ba-image ba-overlay" id="baOverlay" alt="Original iPhone Photo at Event" onerror="this.style.display='none'">
+          <div class="ba-handle-line" id="baHandle"><div class="ba-handle-btn"><i class="fa-solid fa-arrows-left-right"></i></div></div>
+          <input type="range" min="0" max="100" value="50" class="ba-slider-input" id="baSlider" aria-label="Before and after image slider" oninput="
+            document.getElementById('baOverlay').style.clipPath = 'polygon(0 0, ' + this.value + '% 0, ' + this.value + '% 100%, 0 100%)';
+            document.getElementById('baHandle').style.left = this.value + '%';
+          ">
+        </div>
+      </div>
+    </section>
+
+    <section class="container section-padding" id="pricing">
+      <h2 class="text-center" data-aos="fade-up">Grand Opening Investments</h2>
+      <p class="section-subtitle" data-aos="fade-up">Secure these introductory rates before our calendar fills up! No hidden fees.</p>
+      
+      <div class="pricing-grid">
+        <div class="pricing-card" data-aos="fade-right">
+          <div class="pricing-header">A La Carte</div>
+          <div class="pricing-body">
+            <div class="price">$75<span>/ hour</span></div>
+            <p class="pricing-desc">Ideal for focused events needing a single, high-impact entertainment station.</p>
+            <ul class="check-list" style="margin-bottom: 30px;">
+              <li><i class="fa-solid fa-circle-check"></i> Choose 360 Cam OR Photobooth</li>
+              <li><i class="fa-solid fa-circle-check"></i> Instant digital delivery</li>
+            </ul>
+            <a href="#contact" class="btn-outline-white" style="color: var(--accent-blue) !important; border-color: var(--border-color); width: 100%;">Book Single Service</a>
+          </div>
+        </div>
+        <div class="pricing-card" data-aos="fade-up" style="transform: scale(1.05); border-color: var(--accent-blue); box-shadow: 0 25px 50px -12px rgba(37, 99, 235, 0.25); z-index: 2;">
+          <div class="pricing-header" style="background: linear-gradient(135deg, var(--accent-blue), var(--primary-blue));">The Moonbeam Bundle</div>
+          <div class="pricing-body">
+            <div class="price">$100<span>/ hour</span></div>
+            <p class="pricing-desc">The complete experience. Continuous entertainment and comprehensive coverage.</p>
+            <ul class="check-list" style="margin-bottom: 30px;">
+              <li><i class="fa-solid fa-circle-check"></i> 360-Degree Camera Rig</li>
+              <li><i class="fa-solid fa-circle-check"></i> AI Photobooth Station</li>
+              <li><i class="fa-solid fa-circle-check"></i> HOVERAIR Drone Coverage</li>
+            </ul>
+            <a href="#contact" class="btn-blue pricing-btn">Book The Bundle</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="calc-wrapper" data-aos="fade-up">
+        <h3 class="text-center" style="margin-bottom: 30px;">Build Your Custom Package</h3>
+        
+        <div class="calc-row">
+          <label><i class="fa-solid fa-box" style="margin-right:8px; color: var(--accent-blue);"></i> 1. Select Base Service</label>
+          <div class="radio-group">
+            <label><input type="radio" name="calc_base" value="75" onchange="calculateTotal()"> A La Carte ($75/hr)</label>
+            <label><input type="radio" name="calc_base" value="100" checked onchange="calculateTotal()"> The Moonbeam Bundle ($100/hr)</label>
+          </div>
+        </div>
+        
+        <div class="calc-row slider-container">
+          <label><i class="fa-solid fa-clock" style="margin-right:8px; color: var(--accent-blue);"></i> 2. How many hours? (<span id="hours_display">4</span> hrs)</label>
+          <input type="range" id="calc_hours" min="1" max="8" value="4" step="1" aria-label="Hours slider" oninput="document.getElementById('hours_display').innerText=this.value; calculateTotal();">
+        </div>
+        
+        <div class="calc-row">
+          <label><i class="fa-solid fa-plus" style="margin-right:8px; color: var(--accent-blue);"></i> 3. Optional Add-Ons</label>
+          <div class="checkbox-group">
+            <label><input type="checkbox" class="calc_addon" value="70" onchange="calculateTotal()"> Drone Coverage (+$70 flat)</label><br>
+            <label><input type="checkbox" class="calc_addon" value="150" onchange="calculateTotal()"> Audio Guestbook (+$150 flat)</label><br>
+            <label><input type="checkbox" class="calc_addon" value="50" onchange="calculateTotal()"> Custom 360 Overlay (+$50 flat)</label>
+          </div>
+        </div>
+        
+        <div class="calc-total-box">
+          <span style="color: var(--text-muted); font-size: 1.2rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">Estimated Total</span>
+          <span class="calc-total-price" id="calc_total_price">$400</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="comparison-section">
+      <div class="container" data-aos="fade-up">
+        <h2>The Tampa Bay Market Reality</h2>
+        <div class="stop-overpaying">Stop overpaying!</div>
+        <p style="max-width: 650px; margin: 0 auto; font-size: 1.25rem;">We checked the competition in Tampa, Orlando, and St. Pete. Here is what they charge versus us.</p>
+        <table class="comparison-table">
+          <tr><th>Service</th><th>Average Competitor</th><th class="highlight-col">Blue Moon Studios</th></tr>
+          <tr><td>360° Photo Booth</td><td>$150 - $250 / hr</td><td class="highlight-col">$75 / hr</td></tr>
+          <tr><td>Drone Coverage</td><td>$150+ / hr</td><td class="highlight-col">$70 flat add-on</td></tr>
+          <tr><td>Full Event Bundle</td><td>$400+ / hr</td><td class="highlight-col">$100 / hr</td></tr>
+        </table>
+      </div>
+    </section>
+
+    <section class="bg-light-blue" id="contact">
+      <div class="container section-padding">
+        <h2 class="text-center" data-aos="fade-up">Reserve Your Date</h2>
+        <p class="section-subtitle" data-aos="fade-up">Tell us about your event. Use our dedicated intake form for the fastest response time.</p>
+        
+        <div class="contact-wrapper" data-aos="fade-up" style="text-align: center; padding: 50px; background: var(--bg-card); border-radius: 12px; border: 2px dashed var(--accent-blue); max-width: 600px; margin: 0 auto;">
+            <h4 style="color: var(--heading-color); font-weight: 700; margin-bottom: 15px; font-size: 1.5rem;">Quickest way to book?</h4>
+            <p style="margin-bottom: 30px; font-size: 1.15rem; color: var(--text-muted);">Click below to open our secure Google Form. We will get back to you within 24 hours to discuss how we can make your event unforgettable.</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdfo5ylY2vbDYSpfkNNCd3mptnFSCsOYGMTkpWrlDMpsJZ6SQ/viewform?usp=send_form" target="_blank" class="btn-blue" style="font-size: 1.25rem; padding: 15px 30px;">
+              <i class="fa-solid fa-clipboard-list" style="margin-right: 8px;"></i> Open Google Form
+            </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-brand"><span class="blue-text">Blue Moon</span> Studios</div>
+      <div class="social-links">
+        <a href="https://www.instagram.com/bluemoonstudiosservices/" target="_blank" aria-label="Follow us on Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/people/Blu-Moon/61588332764907/" target="_blank" aria-label="Follow us on Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://linktr.ee/bluemoonstudiosservices" target="_blank" aria-label="Visit our Linktree"><i class="fa-solid fa-link"></i></a>
+      </div>
+      <div class="footer-text">&copy; 2026 Blue Moon Studios. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    // Initialize Scroll Animations
+    AOS.init({duration: 800, once: true, offset: 100});
+
+    // Exit Intent Logic
+    let exitIntentShown = false;
+    document.addEventListener('mouseleave', function(e) {
+      if(e.clientY < 0 && !exitIntentShown) {
+        exitIntentShown = true;
+        document.getElementById('exitModal').style.display = 'flex';
+      }
+    });
+
+    // Calculator Logic
+    function calculateTotal() {
+      let baseRate = parseFloat(document.querySelector('input[name="calc_base"]:checked').value);
+      let hours = parseFloat(document.getElementById('calc_hours').value);
+      
+      let addonsTotal = 0;
+      document.querySelectorAll('.calc_addon:checked').forEach(function(addon) {
+        addonsTotal += parseFloat(addon.value);
+      });
+      
+      let finalPrice = (baseRate * hours) + addonsTotal;
+      document.getElementById('calc_total_price').innerText = "$" + finalPrice.toLocaleString();
+    }
+  </script>
+</body>
+</html>
