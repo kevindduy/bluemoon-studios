@@ -151,104 +151,11 @@
     .btn-ghost i { font-size: 9px; transition: transform 0.18s var(--ease); }
     .btn-ghost:hover i { transform: translateX(3px); }
 
-    /* ─── NAV ─── */
-    nav {
-      position: fixed;
-      top: 0; left: 0; right: 0;
-      z-index: 1000;
-      border-bottom: 1px solid transparent;
-      transition: background 0.3s, border-color 0.3s;
-    }
-    nav.scrolled {
-      background: rgba(12,11,9,0.94);
-      backdrop-filter: blur(24px);
-      -webkit-backdrop-filter: blur(24px);
-      border-color: var(--line);
-    }
-    .nav-inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding-block: 20px;
-    }
-    .nav-logo {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .nav-logo-img {
-      width: 32px;
-      height: 32px;
-      object-fit: contain;
-      filter: brightness(0) invert(1);
-      opacity: 0.9;
-    }
-    .nav-logo-text {
-      font-family: var(--f-ui);
-      font-size: 14px;
-      font-weight: 600;
-      letter-spacing: 0.06em;
-      color: var(--fg);
-    }
-    .nav-logo-text em {
-      font-style: normal;
-      color: var(--accent);
-    }
-    .nav-menu {
-      display: flex;
-      align-items: center;
-      gap: 2px;
-    }
-    .nav-menu a {
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--fg-3);
-      padding: 8px 14px;
-      border-radius: var(--r-sm);
-      transition: color 0.18s;
-    }
-    .nav-menu a:hover { color: var(--fg); }
-    .nav-menu .btn { margin-left: 12px; }
-
-    .nav-hamburger {
-      display: none;
-      flex-direction: column;
-      gap: 5px;
-      padding: 6px;
-    }
-    .nav-hamburger span {
-      display: block;
-      width: 22px;
-      height: 1.5px;
-      background: var(--fg);
-      transition: all 0.25s var(--ease);
-    }
-
-    .mobile-nav {
-      display: none;
-      flex-direction: column;
-      padding: 20px 0 28px;
-      border-top: 1px solid var(--line);
-      gap: 2px;
-    }
-    .mobile-nav a {
-      font-size: 13px;
-      font-weight: 500;
-      color: var(--fg-2);
-      padding: 10px 0;
-      border-bottom: 1px solid var(--line);
-      transition: color 0.18s;
-    }
-    .mobile-nav a:hover { color: var(--fg); }
-    .mobile-nav .btn { margin-top: 16px; justify-content: center; }
-
     /* ─── LOCATION STRIP ─── */
     .location-strip {
       position: relative;
       z-index: 1;
-      margin-top: 73px;
+      margin-top: 0; /* Adjusted from 73px to remove gap */
       background: var(--bg-1);
       border-bottom: 1px solid var(--line);
       padding: 10px 0;
@@ -332,7 +239,6 @@
     }
     .hero-h1 .accent-word {
       color: var(--accent);
-      /* display: block; removed to fix spacing issue */
     }
 
     .hero-sub {
@@ -1172,9 +1078,6 @@
     }
 
     @media (max-width: 768px) {
-      .nav-menu { display: none; }
-      .nav-hamburger { display: flex; }
-      .mobile-nav.open { display: flex; }
       .calc-body { grid-template-columns: 1fr; }
       .calc-inputs { border-right: none; border-bottom: 1px solid var(--line); }
     }
@@ -1186,35 +1089,6 @@
   </style>
 </head>
 <body>
-
-  <nav id="mainNav">
-    <div class="wrap">
-      <div class="nav-inner">
-        <a href="#" class="nav-logo" aria-label="Blue Moon Studios">
-          <img src="bluemoon_logo.png" class="nav-logo-img" alt="Blue Moon Studios" onerror="this.style.display='none'">
-          <span class="nav-logo-text"><em>Blue Moon</em> Studios</span>
-        </a>
-
-        <div class="nav-menu" role="menubar">
-          <a href="#services" role="menuitem">Services</a>
-          <a href="#pricing" role="menuitem">Pricing</a>
-          <a href="#faq" role="menuitem">FAQ</a>
-          <a href="#contact" class="btn btn-primary" role="menuitem">Book Now</a>
-        </div>
-
-        <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-      <div class="mobile-nav" id="mobileNav">
-        <a href="#services">Services</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#faq">FAQ</a>
-        <a href="#contact">Contact</a>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdfo5ylY2vbDYSpfkNNCd3mptnFSCsOYGMTkpWrlDMpsJZ6SQ/viewform?usp=send_form" target="_blank" class="btn btn-primary">Book Now</a>
-      </div>
-    </div>
-  </nav>
 
   <div class="location-strip" aria-label="Service areas">
     <div class="strip-track" aria-hidden="true">
@@ -1594,7 +1468,18 @@
 
   </main>
 
-  
+  <footer>
+    <div class="wrap">
+      <div class="footer-inner">
+        <div class="footer-logo"><em>Blue Moon</em> Studios</div>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="#services">Services</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-copy">
         <span>&copy; 2026 Blue Moon Studios · Tampa, FL · Photobooth Rentals Tampa Bay</span>
         <div class="footer-socials">
           <a href="https://www.instagram.com/bluemoonstudiosservices/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
@@ -1606,24 +1491,6 @@
   </footer>
 
   <script>
-    /* ── Nav scroll ── */
-    const nav = document.getElementById('mainNav');
-    window.addEventListener('scroll', () => {
-      nav.classList.toggle('scrolled', window.scrollY > 60);
-    }, { passive: true });
-
-    /* ── Mobile nav ── */
-    const hamburger = document.getElementById('hamburger');
-    const mobileNav = document.getElementById('mobileNav');
-    hamburger.addEventListener('click', () => {
-      const open = mobileNav.classList.toggle('open');
-      hamburger.setAttribute('aria-expanded', open);
-    });
-    mobileNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-      mobileNav.classList.remove('open');
-      hamburger.setAttribute('aria-expanded', 'false');
-    }));
-
     /* ── Before/After slider ── */
     function setSlider(pct) {
       const clip = `polygon(0 0,${pct}% 0,${pct}% 100%,0 100%)`;
