@@ -4,55 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
-  <title>Tampa Photobooth Rental | Self-Standing Digital Kiosk | Blue Moon Studios</title>
-  <meta name="description" content="Rent Tampa Bay's sleekest self-standing digital photobooth kiosk from just $75/hr. Blue Moon Studios serves Tampa, St. Pete, Clearwater, and Orlando with modern photobooths, 360 video stations, and drone coverage for weddings, parties & corporate events.">
-  <meta name="keywords" content="photobooth rental Tampa, self-standing photobooth Tampa Bay, digital photobooth rental Orlando, wedding photobooth St. Pete, professional photobooth kiosk Florida, modern event booth, 360 booth rental Tampa, drone videography Tampa Florida">
+  <title>Tampa Photobooth Rental | Public Venues Only | Blue Moon Studios</title>
+  <meta name="description" content="Rent Tampa Bay's sleekest self-standing digital photobooth kiosk from $80/hr. Public venues only. Serving Port Richey, St. Pete, Wesley Chapel, and Tampa without delivery fees.">
+  <meta name="keywords" content="photobooth rental Tampa, self-standing photobooth Tampa Bay, digital photobooth rental Wesley Chapel, wedding photobooth St. Pete, public venue photobooth">
   <meta name="author" content="Blue Moon Studios">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://yourcustomdomain.com/">
-
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://yourcustomdomain.com/">
-  <meta property="og:title" content="Tampa Photobooth Rental from $75/hr | Blue Moon Studios">
-  <meta property="og:description" content="Modern self-standing digital photobooth kiosks with instant SMS & AirDrop sharing for weddings, parties, and corporate events across Tampa Bay and Central Florida.">
-  <meta property="og:image" content="https://yourcustomdomain.com/photoboothpad.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="geo.region" content="US-FL">
-  <meta name="geo.placename" content="Tampa, Florida">
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Blue Moon Studios",
-    "description": "Premium self-standing digital photobooth rentals, 360 video stations, and aerial drone media services for events in Tampa Bay and Central Florida.",
-    "url": "https://yourcustomdomain.com/",
-    "priceRange": "$$",
-    "areaServed": [
-      {"@type": "City", "name": "Tampa"},
-      {"@type": "City", "name": "St. Petersburg"},
-      {"@type": "City", "name": "Clearwater"},
-      {"@type": "City", "name": "Orlando"}
-    ],
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Tampa",
-      "addressRegion": "FL",
-      "addressCountry": "US"
-    },
-    "sameAs": [
-      "https://www.instagram.com/tampabluemoonstudios/",
-      "https://www.facebook.com/people/Blu-Moon/61588332764907/"
-    ]
-  }
-  </script>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="icon" href="bluemoon_logo.png" type="image/png">
-
+  
   <style>
     /* ─────────────────────────────────────────
         TOKENS
@@ -66,7 +23,7 @@
       --fg-3:      #6a6460;
       --accent:    #2563eb; /* Blue */
       --accent-2:  #3b82f6; /* Lighter Blue */
-      --accent-dim: rgba(37, 99, 235, 0.12); /* Dim Blue */
+      --accent-dim: rgba(37, 99, 235, 0.12);
       --line:      rgba(240,236,228,0.08);
       --line-warm: rgba(240,236,228,0.14);
 
@@ -75,12 +32,7 @@
       --f-ui:      'Geist', -apple-system, sans-serif;
 
       --ease:      cubic-bezier(0.16, 1, 0.3, 1);
-      --ease-back: cubic-bezier(0.34, 1.56, 0.64, 1);
-
-      --r-sm: 4px;
-      --r-md: 8px;
-      --r-lg: 16px;
-
+      --r-sm: 4px; --r-md: 8px; --r-lg: 16px;
       --w: min(1200px, 100% - 48px);
       --section: clamp(80px, 12vw, 140px);
     }
@@ -121,41 +73,17 @@
       transition: all 0.22s var(--ease);
       white-space: nowrap;
     }
-    .btn-primary {
-      background: var(--accent);
-      color: #fff;
-    }
-    .btn-primary:hover {
-      background: var(--accent-2);
-      transform: translateY(-1px);
-    }
-    .btn-outline {
-      border: 1px solid var(--line-warm);
-      color: var(--fg-2);
-    }
-    .btn-outline:hover {
-      border-color: var(--fg-2);
-      color: var(--fg);
-    }
-    .btn-ghost {
-      color: var(--fg-2);
-      font-size: 12px;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      font-weight: 600;
-      padding: 0;
-      gap: 6px;
-      transition: color 0.18s;
-    }
+    .btn-primary { background: var(--accent); color: #fff; }
+    .btn-primary:hover { background: var(--accent-2); transform: translateY(-1px); }
+    .btn-outline { border: 1px solid var(--line-warm); color: var(--fg-2); }
+    .btn-outline:hover { border-color: var(--fg-2); color: var(--fg); }
+    .btn-ghost { color: var(--fg-2); font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600; padding: 0; gap: 6px; transition: color 0.18s; }
     .btn-ghost:hover { color: var(--fg); }
-    .btn-ghost i { font-size: 9px; transition: transform 0.18s var(--ease); }
-    .btn-ghost:hover i { transform: translateX(3px); }
 
     /* ─── LOCATION STRIP ─── */
     .location-strip {
       position: relative;
       z-index: 1;
-      margin-top: 0; 
       background: var(--bg-1);
       border-bottom: 1px solid var(--line);
       padding: 10px 0;
@@ -179,16 +107,8 @@
       text-transform: uppercase;
       color: var(--fg-3);
     }
-    .strip-dot {
-      width: 3px; height: 3px;
-      border-radius: 50%;
-      background: var(--accent);
-      flex-shrink: 0;
-    }
-    @keyframes marquee {
-      from { transform: translateX(0); }
-      to   { transform: translateX(-50%); }
-    }
+    .strip-dot { width: 3px; height: 3px; border-radius: 50%; background: var(--accent); flex-shrink: 0; }
+    @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 
     /* ─── HERO ─── */
     .hero {
@@ -200,1027 +120,112 @@
       overflow: hidden;
       border-bottom: 1px solid var(--line);
     }
+    .hero-left { padding: clamp(60px, 8vw, 100px) clamp(24px, 4vw, 60px) clamp(60px, 8vw, 100px) max(24px, calc((100vw - 1200px) / 2)); display: flex; flex-direction: column; justify-content: flex-end; height: 100%; }
+    .hero-eyebrow { font-size: 10.5px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent); display: flex; align-items: center; gap: 12px; margin-bottom: 28px; }
+    .hero-eyebrow::before { content: ''; display: block; width: 24px; height: 1px; background: var(--accent); }
+    .hero-h1 { font-family: var(--f-display); font-size: clamp(5.5rem, 11vw, 10.5rem); line-height: 0.9; letter-spacing: 0.02em; color: var(--fg); margin-bottom: 32px; }
+    .hero-h1 .accent-word { color: var(--accent); }
+    .hero-sub { font-size: 15px; color: var(--fg-2); line-height: 1.7; max-width: 440px; margin-bottom: 44px; }
+    
+    /* Subtle but obvious alert styling */
+    .policy-box { 
+      display: block; 
+      margin-top: 20px; 
+      padding: 12px 16px; 
+      background: var(--bg-1); 
+      border-left: 2px solid var(--accent); 
+      font-size: 13.5px; 
+      color: var(--fg); 
+      border-radius: 0 var(--r-sm) var(--r-sm) 0;
+    }
+    .policy-box strong { color: var(--accent-2); }
 
-    /* Left column */
-    .hero-left {
-      padding: clamp(60px, 8vw, 100px) clamp(24px, 4vw, 60px) clamp(60px, 8vw, 100px) max(24px, calc((100vw - 1200px) / 2));
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      height: 100%;
-    }
-
-    .hero-eyebrow {
-      font-size: 10.5px;
-      font-weight: 600;
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-      color: var(--accent);
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 28px;
-    }
-    .hero-eyebrow::before {
-      content: '';
-      display: block;
-      width: 24px;
-      height: 1px;
-      background: var(--accent);
-    }
-
-    .hero-h1 {
-      font-family: var(--f-display);
-      font-size: clamp(5.5rem, 11vw, 10.5rem);
-      line-height: 0.9;
-      letter-spacing: 0.02em;
-      color: var(--fg);
-      margin-bottom: 32px;
-    }
-    .hero-h1 .accent-word {
-      color: var(--accent);
-    }
-
-    .hero-sub {
-      font-size: 15px;
-      color: var(--fg-2);
-      line-height: 1.7;
-      max-width: 400px;
-      margin-bottom: 44px;
-    }
-
-    .hero-ctas {
-      display: flex;
-      align-items: center;
-      gap: 24px;
-      flex-wrap: wrap;
-    }
-
-    .hero-price-note {
-      font-size: 11px;
-      color: var(--fg-3);
-      letter-spacing: 0.06em;
-      margin-top: 28px;
-    }
-    .hero-price-note strong {
-      color: var(--fg);
-      font-weight: 600;
-    }
-
-    /* Right column */
-    .hero-right {
-      position: relative;
-      height: 100%;
-      overflow: hidden;
-      border-left: 1px solid var(--line);
-    }
-    .hero-right-img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center top;
-      opacity: 0.75;
-      transition: opacity 0.5s;
-    }
-    .hero-right::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(to right, var(--bg) 0%, transparent 25%),
-                  linear-gradient(to top, var(--bg) 0%, transparent 30%);
-      pointer-events: none;
-    }
-
-    /* Floating price chip */
-    .price-chip {
-      position: absolute;
-      top: 40px;
-      right: 32px;
-      z-index: 2;
-      background: var(--bg-2);
-      border: 1px solid var(--line-warm);
-      border-radius: var(--r-md);
-      padding: 16px 22px;
-      text-align: center;
-    }
-    .price-chip-amount {
-      font-family: var(--f-display);
-      font-size: 2.8rem;
-      line-height: 1;
-      color: var(--fg);
-      display: block;
-    }
-    .price-chip-label {
-      font-size: 10px;
-      font-weight: 600;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--fg-3);
-      display: block;
-      margin-top: 4px;
-    }
-
-    /* Share chip */
-    .share-chip {
-      position: absolute;
-      bottom: 40px;
-      right: 32px;
-      z-index: 2;
-      background: var(--bg-2);
-      border: 1px solid var(--line-warm);
-      border-radius: var(--r-md);
-      padding: 12px 18px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .share-icons {
-      display: flex;
-      gap: 8px;
-    }
-    .share-icon-item {
-      width: 28px;
-      height: 28px;
-      background: rgba(240,236,228,0.06);
-      border-radius: 6px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--fg-2);
-      font-size: 10px;
-    }
-    .share-chip-label {
-      font-size: 10px;
-      font-weight: 600;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--fg-3);
-    }
+    .hero-ctas { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
+    .hero-price-note { font-size: 11px; color: var(--fg-3); letter-spacing: 0.06em; margin-top: 28px; }
+    .hero-price-note strong { color: var(--fg); font-weight: 600; }
+    
+    .hero-right { position: relative; height: 100%; overflow: hidden; border-left: 1px solid var(--line); }
+    .hero-right-img { width: 100%; height: 100%; object-fit: cover; object-position: center top; opacity: 0.75; }
+    .hero-right::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to right, var(--bg) 0%, transparent 25%), linear-gradient(to top, var(--bg) 0%, transparent 30%); pointer-events: none; }
+    .price-chip { position: absolute; top: 40px; right: 32px; z-index: 2; background: var(--bg-2); border: 1px solid var(--line-warm); border-radius: var(--r-md); padding: 16px 22px; text-align: center; }
+    .price-chip-amount { font-family: var(--f-display); font-size: 2.8rem; line-height: 1; color: var(--fg); display: block; }
+    .price-chip-label { font-size: 10px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--fg-3); display: block; margin-top: 4px; }
 
     /* ─── SERVICES ─── */
-    .services-header {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 60px;
-      align-items: end;
-      padding-bottom: 60px;
-      border-bottom: 1px solid var(--line);
-      margin-bottom: 60px;
-    }
-    .services-title {
-      font-family: var(--f-display);
-      font-size: clamp(3.5rem, 7vw, 6rem);
-      line-height: 0.92;
-      letter-spacing: 0.02em;
-      color: var(--fg);
-    }
-    .services-title em {
-      font-family: var(--f-serif);
-      font-style: italic;
-      color: var(--fg-2);
-      display: block;
-      font-size: 0.75em;
-      letter-spacing: 0;
-      margin-top: 8px;
-    }
-    .services-lead {
-      font-size: 15px;
-      color: var(--fg-2);
-      line-height: 1.75;
-      max-width: 420px;
-      align-self: end;
-    }
-
-    .services-list {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      border-top: 1px solid var(--line);
-    }
-    .service-item {
-      padding: 44px 36px;
-      border-right: 1px solid var(--line);
-      display: flex;
-      flex-direction: column;
-      gap: 0;
-      transition: background 0.25s;
-    }
+    .services-header { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: end; padding-bottom: 60px; border-bottom: 1px solid var(--line); margin-bottom: 60px; }
+    .services-title { font-family: var(--f-display); font-size: clamp(3.5rem, 7vw, 6rem); line-height: 0.92; letter-spacing: 0.02em; color: var(--fg); }
+    .services-title em { font-family: var(--f-serif); font-style: italic; color: var(--fg-2); display: block; font-size: 0.75em; letter-spacing: 0; margin-top: 8px; }
+    .services-lead { font-size: 15px; color: var(--fg-2); line-height: 1.75; max-width: 420px; align-self: end; }
+    .services-list { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); }
+    .service-item { padding: 44px 36px; border-right: 1px solid var(--line); display: flex; flex-direction: column; gap: 0; transition: background 0.25s; }
     .service-item:last-child { border-right: none; }
     .service-item:hover { background: var(--bg-1); }
+    .service-num { font-family: var(--f-display); font-size: 3.5rem; color: rgba(240,236,228,0.06); line-height: 1; margin-bottom: 20px; }
+    .service-title { font-family: var(--f-ui); font-size: 14px; font-weight: 600; letter-spacing: 0.04em; color: var(--fg); margin-bottom: 14px; }
+    .service-desc { font-size: 13.5px; color: var(--fg-3); line-height: 1.7; margin-bottom: 28px; flex-grow: 1; }
+    .service-price { font-family: var(--f-display); font-size: 2.2rem; color: var(--accent); letter-spacing: 0.02em; line-height: 1; margin-bottom: 4px; }
+    .service-price-note { font-size: 10.5px; color: var(--fg-3); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 24px; }
+    .service-features { display: flex; flex-direction: column; gap: 7px; }
+    .service-features li { font-size: 12.5px; color: var(--fg-2); display: flex; align-items: flex-start; gap: 8px; }
+    .service-features li::before { content: '→'; color: var(--accent); font-size: 11px; margin-top: 2px; flex-shrink: 0; }
 
-    .service-num {
-      font-family: var(--f-display);
-      font-size: 3.5rem;
-      color: rgba(240,236,228,0.06);
-      line-height: 1;
-      margin-bottom: 20px;
-    }
-    .service-title {
-      font-family: var(--f-ui);
-      font-size: 14px;
-      font-weight: 600;
-      letter-spacing: 0.04em;
-      color: var(--fg);
-      margin-bottom: 14px;
-    }
-    .service-desc {
-      font-size: 13.5px;
-      color: var(--fg-3);
-      line-height: 1.7;
-      margin-bottom: 28px;
-      flex-grow: 1;
-    }
-    .service-price {
-      font-family: var(--f-display);
-      font-size: 2.2rem;
-      color: var(--accent);
-      letter-spacing: 0.02em;
-      line-height: 1;
-      margin-bottom: 4px;
-    }
-    .service-price-note {
-      font-size: 10.5px;
-      color: var(--fg-3);
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      margin-bottom: 24px;
-    }
-    .service-features {
-      display: flex;
-      flex-direction: column;
-      gap: 7px;
-    }
-    .service-features li {
-      font-size: 12.5px;
-      color: var(--fg-2);
-      display: flex;
-      align-items: flex-start;
-      gap: 8px;
-    }
-    .service-features li::before {
-      content: '→';
-      color: var(--accent);
-      font-size: 11px;
-      margin-top: 2px;
-      flex-shrink: 0;
-    }
-
-    /* ─── BEFORE / AFTER ─── */
-    .ba-section {
-      background: var(--bg-1);
-      border-block: 1px solid var(--line);
-    }
-    .ba-header {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 60px;
-      align-items: end;
-      margin-bottom: 52px;
-    }
-    .ba-title {
-      font-family: var(--f-display);
-      font-size: clamp(3rem, 6vw, 5rem);
-      line-height: 0.92;
-      letter-spacing: 0.02em;
-    }
-    .ba-lead {
-      font-size: 14px;
-      color: var(--fg-2);
-      line-height: 1.75;
-      align-self: end;
-    }
-
-    .ba-wrapper {
-      position: relative;
-      border-radius: var(--r-lg);
-      overflow: hidden;
-      line-height: 0;
-      cursor: ew-resize;
-      border: 1px solid var(--line-warm);
-      user-select: none;
-    }
-    .ba-img-after {
-      display: block;
-      width: 100%;
-    }
-    .ba-img-before {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
-    }
-    .ba-divider {
-      position: absolute;
-      top: 0; bottom: 0;
-      left: 50%;
-      width: 1px;
-      background: rgba(255,255,255,0.5);
-      transform: translateX(-50%);
-      pointer-events: none;
-    }
-    .ba-handle-pill {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%,-50%);
-      background: #fff;
-      border-radius: 100px;
-      height: 36px;
-      display: flex;
-      align-items: center;
-      padding: 0 10px;
-      gap: 4px;
-      color: #222;
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 0.04em;
-      white-space: nowrap;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
-      pointer-events: none;
-    }
-    .ba-labels {
-      position: absolute;
-      top: 20px; left: 0; right: 0;
-      display: flex;
-      justify-content: space-between;
-      padding-inline: 20px;
-      pointer-events: none;
-    }
-    .ba-tag {
-      background: rgba(0,0,0,0.55);
-      backdrop-filter: blur(8px);
-      color: #fff;
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      padding: 5px 12px;
-      border-radius: 100px;
-    }
-    .ba-input {
-      position: absolute;
-      inset: 0;
-      opacity: 0;
-      cursor: ew-resize;
-      width: 100%;
-      margin: 0;
-    }
-
-    /* ─── GALLERY SECTIONS ─── */
-    .gallery-section {
-      background: var(--bg);
-      border-bottom: 1px solid var(--line);
-    }
-    .gallery-header {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      margin-bottom: 52px;
-    }
-    .gallery-title {
-      font-family: var(--f-display);
-      font-size: clamp(3rem, 6vw, 5rem);
-      line-height: 0.92;
-      letter-spacing: 0.02em;
-    }
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 16px;
-    }
-    .gallery-img {
-      width: 100%;
-      height: 320px;
-      object-fit: cover;
-      border-radius: var(--r-md);
-      border: 1px solid var(--line);
-      cursor: pointer;
-      transition: transform 0.3s var(--ease);
-    }
-    .gallery-img:hover {
-      transform: scale(1.02);
-    }
-
-    /* ─── IMAGE MODAL ─── */
-    .modal-overlay {
-      position: fixed;
-      inset: 0;
-      z-index: 9999;
-      background: rgba(12, 11, 9, 0.95);
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.3s var(--ease);
-      padding: 24px;
-    }
-    .modal-overlay.active {
-      opacity: 1;
-      pointer-events: auto;
-    }
-    .modal-img {
-      max-width: 100%;
-      max-height: 90vh;
-      object-fit: contain;
-      border-radius: var(--r-md);
-      box-shadow: 0 10px 40px rgba(0,0,0,0.5);
-      transform: scale(0.95);
-      transition: transform 0.3s var(--ease);
-    }
-    .modal-overlay.active .modal-img {
-      transform: scale(1);
-    }
-    .modal-close {
-      position: absolute;
-      top: 24px;
-      right: 32px;
-      color: var(--fg);
-      font-size: 40px;
-      font-family: var(--f-ui);
-      font-weight: 300;
-      background: transparent;
-      border: none;
-      cursor: pointer;
-      transition: color 0.2s;
-      z-index: 10000;
-      line-height: 1;
-    }
-    .modal-close:hover {
-      color: var(--accent);
-    }
-
-    /* ─── PRICING ─── */
-    .pricing-header {
-      margin-bottom: 52px;
-    }
-    .pricing-title {
-      font-family: var(--f-display);
-      font-size: clamp(3.5rem, 7vw, 6rem);
-      line-height: 0.92;
-      letter-spacing: 0.02em;
-      margin-bottom: 16px;
-    }
-    .pricing-sub {
-      font-size: 14px;
-      color: var(--fg-2);
-      max-width: 480px;
-    }
-
-    .pricing-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      border: 1px solid var(--line);
-      border-radius: var(--r-lg);
-      overflow: hidden;
-    }
-    .pricing-col {
-      padding: clamp(32px, 4vw, 52px);
-      border-right: 1px solid var(--line);
-      display: flex;
-      flex-direction: column;
-    }
-    .pricing-col:last-child { border-right: none; }
-    .pricing-col-label {
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--fg-3);
-      margin-bottom: 20px;
-    }
-    .pricing-col-amount {
-      font-family: var(--f-display);
-      font-size: clamp(4rem, 7vw, 6.5rem);
-      line-height: 0.9;
-      letter-spacing: 0.02em;
-      color: var(--fg);
-      margin-bottom: 6px;
-    }
-    .pricing-col-unit {
-      font-size: 12px;
-      color: var(--fg-3);
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      margin-bottom: 24px;
-    }
-    .pricing-col-desc {
-      font-size: 13.5px;
-      color: var(--fg-2);
-      line-height: 1.7;
-      margin-bottom: 32px;
-    }
-    .pricing-col-items {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      margin-bottom: 36px;
-      flex-grow: 1;
-    }
-    .pricing-col-items li {
-      font-size: 13px;
-      color: var(--fg-2);
-      display: flex;
-      align-items: flex-start;
-      gap: 10px;
-    }
-    .pricing-col-items li::before {
-      content: '→';
-      color: var(--accent);
-      font-size: 11px;
-      flex-shrink: 0;
-      margin-top: 2px;
-    }
-
-    /* calculator */
-    .calc-section {
-      margin-top: 2px;
-      border: 1px solid var(--line);
-      border-radius: var(--r-lg);
-      overflow: hidden;
-    }
-    .calc-top {
-      padding: 32px clamp(28px, 4vw, 48px);
-      border-bottom: 1px solid var(--line);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-    .calc-top-label {
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--fg-3);
-      margin-bottom: 6px;
-    }
-    .calc-top-title {
-      font-family: var(--f-ui);
-      font-size: 18px;
-      font-weight: 600;
-      color: var(--fg);
-    }
-    .calc-body {
-      display: grid;
-      grid-template-columns: 1fr 280px;
-    }
-    .calc-inputs {
-      padding: clamp(28px, 4vw, 48px);
-      border-right: 1px solid var(--line);
-      display: flex;
-      flex-direction: column;
-      gap: 28px;
-    }
-    .calc-field label {
-      display: block;
-      font-size: 10.5px;
-      font-weight: 600;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--fg-3);
-      margin-bottom: 12px;
-    }
-    .calc-options {
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-    }
-    .calc-option {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-size: 13px;
-      color: var(--fg-2);
-      cursor: pointer;
-      padding: 10px 14px;
-      border: 1px solid var(--line);
-      border-radius: var(--r-sm);
-      transition: all 0.18s;
-    }
-    .calc-option:hover {
-      border-color: var(--line-warm);
-      color: var(--fg);
-    }
-    .calc-option input[type="radio"],
-    .calc-option input[type="checkbox"] {
-      accent-color: var(--accent);
-      width: 14px; height: 14px;
-      flex-shrink: 0;
-    }
-    .calc-hours-row {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-    }
-    .calc-hours-row input[type="range"] {
-      flex: 1;
-      accent-color: var(--accent);
-      height: 3px;
-    }
-    .calc-hours-val {
-      font-family: var(--f-display);
-      font-size: 2rem;
-      color: var(--accent);
-      line-height: 1;
-      width: 52px;
-      text-align: right;
-      flex-shrink: 0;
-    }
-    .calc-total-panel {
-      padding: clamp(28px, 4vw, 48px);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-    .calc-total-label {
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--fg-3);
-      margin-bottom: 12px;
-    }
-    .calc-total-amount {
-      font-family: var(--f-display);
-      font-size: clamp(3.5rem, 5vw, 5rem);
-      line-height: 0.9;
-      color: var(--fg);
-      margin-bottom: 8px;
-    }
-    .calc-total-note {
-      font-size: 11px;
-      color: var(--fg-3);
-      line-height: 1.5;
-    }
-
-    /* ─── COMPARISON ─── */
-    .compare-section {
-      background: var(--bg-1);
-      border-block: 1px solid var(--line);
-    }
-    .compare-header {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 60px;
-      align-items: end;
-      margin-bottom: 52px;
-    }
-    .compare-title {
-      font-family: var(--f-display);
-      font-size: clamp(3rem, 5.5vw, 5rem);
-      line-height: 0.92;
-      letter-spacing: 0.02em;
-    }
-    .compare-note {
-      font-size: 14px;
-      color: var(--fg-2);
-      line-height: 1.7;
-      align-self: end;
-    }
-
-    .compare-table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 13.5px;
-    }
-    .compare-table th {
-      text-align: left;
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: var(--fg-3);
-      padding: 0 20px 16px;
-      border-bottom: 1px solid var(--line);
-    }
-    .compare-table th:first-child { padding-left: 0; }
-    .compare-table th:not(:first-child) { text-align: right; }
-    .compare-table td {
-      padding: 18px 20px;
-      border-bottom: 1px solid var(--line);
-      color: var(--fg-2);
-    }
-    .compare-table td:first-child {
-      padding-left: 0;
-      color: var(--fg);
-      font-weight: 500;
-    }
-    .compare-table td:not(:first-child) { text-align: right; }
-    .compare-table tr:last-child td { border-bottom: none; }
-    .td-them { color: var(--fg-3); }
-    .td-us {
-      color: var(--accent);
-      font-weight: 700;
-      font-family: var(--f-ui);
-    }
-
-    /* ─── TESTIMONIALS ─── */
-    .testimonials-section {
-      background: var(--bg);
-    }
-    .testimonials-header {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      margin-bottom: 52px;
-    }
-    .testimonials-title {
-      font-family: var(--f-display);
-      font-size: clamp(3rem, 6vw, 5rem);
-      line-height: 0.92;
-      letter-spacing: 0.02em;
-    }
-    .testimonials-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 24px;
-    }
-    .testimonial-card {
-      padding: 36px;
-      border: 1px solid var(--line);
-      border-radius: var(--r-lg);
-      background: var(--bg-1);
-      display: flex;
-      flex-direction: column;
-    }
-    .testimonial-stars {
-      color: #fbbf24;
-      font-size: 13px;
-      margin-bottom: 20px;
-      display: flex;
-      gap: 4px;
-    }
-    .testimonial-text {
-      font-size: 14.5px;
-      color: var(--fg);
-      line-height: 1.6;
-      margin-bottom: 32px;
-      font-style: italic;
-      flex-grow: 1;
-    }
-    .testimonial-author {
-      font-size: 12px;
-      font-weight: 600;
-      color: var(--accent-2);
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-    }
-    .testimonial-meta {
-      font-size: 11px;
-      color: var(--fg-3);
-      margin-top: 6px;
-    }
+    /* ─── PRICING CALCULATOR ─── */
+    .calc-section { margin-top: 50px; border: 1px solid var(--line); border-radius: var(--r-lg); overflow: hidden; }
+    .calc-top { padding: 32px clamp(28px, 4vw, 48px); border-bottom: 1px solid var(--line); display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    .calc-top-label { font-size: 10px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); margin-bottom: 6px; }
+    .calc-top-title { font-family: var(--f-ui); font-size: 18px; font-weight: 600; color: var(--fg); }
+    .calc-body { display: grid; grid-template-columns: 1fr 280px; }
+    .calc-inputs { padding: clamp(28px, 4vw, 48px); border-right: 1px solid var(--line); display: flex; flex-direction: column; gap: 28px; }
+    .calc-field label { display: block; font-size: 10.5px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--fg-3); margin-bottom: 12px; }
+    .calc-options { display: flex; flex-direction: column; gap: 6px; }
+    .calc-option { display: flex; align-items: center; gap: 10px; font-size: 13px; color: var(--fg-2); cursor: pointer; padding: 10px 14px; border: 1px solid var(--line); border-radius: var(--r-sm); transition: all 0.18s; }
+    .calc-option:hover { border-color: var(--line-warm); color: var(--fg); }
+    .calc-option input[type="radio"], .calc-option input[type="checkbox"] { accent-color: var(--accent); width: 14px; height: 14px; flex-shrink: 0; }
+    .calc-hours-row { display: flex; align-items: center; gap: 16px; }
+    .calc-hours-row input[type="range"] { flex: 1; accent-color: var(--accent); height: 3px; }
+    .calc-hours-val { font-family: var(--f-display); font-size: 2rem; color: var(--accent); line-height: 1; width: 52px; text-align: right; flex-shrink: 0; }
+    .calc-total-panel { padding: clamp(28px, 4vw, 48px); display: flex; flex-direction: column; justify-content: space-between; background: var(--bg-1); }
+    .calc-total-label { font-size: 10px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--fg-3); margin-bottom: 12px; }
+    .calc-total-amount { font-family: var(--f-display); font-size: clamp(3.5rem, 5vw, 5rem); line-height: 0.9; color: var(--fg); margin-bottom: 8px; }
+    .calc-total-note { font-size: 11px; color: var(--fg-3); line-height: 1.5; }
 
     /* ─── FAQ ─── */
-    .faq-header {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 60px;
-      align-items: end;
-      margin-bottom: 52px;
-    }
-    .faq-title {
-      font-family: var(--f-display);
-      font-size: clamp(3.5rem, 6vw, 5.5rem);
-      line-height: 0.92;
-      letter-spacing: 0.02em;
-    }
-    .faq-lead {
-      font-size: 14px;
-      color: var(--fg-2);
-      line-height: 1.75;
-      align-self: end;
-    }
-
-    .faq-list {
-      border-top: 1px solid var(--line);
-    }
-    .faq-item {
-      border-bottom: 1px solid var(--line);
-    }
-    .faq-btn {
-      width: 100%;
-      text-align: left;
-      padding: 22px 0;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-      font-size: 14.5px;
-      font-weight: 500;
-      color: var(--fg);
-      transition: color 0.18s;
-    }
+    .faq-header { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: end; margin-bottom: 52px; }
+    .faq-title { font-family: var(--f-display); font-size: clamp(3.5rem, 6vw, 5.5rem); line-height: 0.92; letter-spacing: 0.02em; }
+    .faq-lead { font-size: 14px; color: var(--fg-2); line-height: 1.75; align-self: end; }
+    .faq-list { border-top: 1px solid var(--line); }
+    .faq-item { border-bottom: 1px solid var(--line); }
+    .faq-btn { width: 100%; text-align: left; padding: 22px 0; display: flex; align-items: center; justify-content: space-between; gap: 20px; font-size: 14.5px; font-weight: 500; color: var(--fg); transition: color 0.18s; }
     .faq-btn:hover { color: var(--fg-2); }
-    .faq-indicator {
-      width: 22px; height: 22px;
-      border: 1px solid var(--line-warm);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--fg-3);
-      font-size: 9px;
-      flex-shrink: 0;
-      transition: all 0.22s var(--ease);
-    }
-    .faq-btn[aria-expanded="true"] .faq-indicator {
-      background: var(--accent);
-      border-color: var(--accent);
-      color: #fff;
-      transform: rotate(45deg);
-    }
-    .faq-answer {
-      display: none;
-      padding-bottom: 22px;
-      font-size: 13.5px;
-      color: var(--fg-2);
-      line-height: 1.8;
-      max-width: 680px;
-    }
-    .faq-answer a { color: var(--accent); border-bottom: 1px solid rgba(37,99,235,0.4); transition: border-color 0.18s; }
-    .faq-answer a:hover { border-color: var(--accent); }
+    .faq-indicator { width: 22px; height: 22px; border: 1px solid var(--line-warm); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--fg-3); font-size: 9px; flex-shrink: 0; transition: all 0.22s var(--ease); }
+    .faq-btn[aria-expanded="true"] .faq-indicator { background: var(--accent); border-color: var(--accent); color: #fff; transform: rotate(45deg); }
+    .faq-answer { display: none; padding-bottom: 22px; font-size: 13.5px; color: var(--fg-2); line-height: 1.8; max-width: 680px; }
     .faq-answer.open { display: block; }
-
+    
     /* ─── CONTACT / CTA ─── */
-    .cta-section {
-      border-top: 1px solid var(--line);
-    }
-    .cta-inner {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      min-height: 480px;
-    }
-    .cta-left {
-      padding: clamp(60px, 8vw, 100px) clamp(24px, 4vw, 60px) clamp(60px, 8vw, 100px) 0;
-      border-right: 1px solid var(--line);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-    .cta-headline {
-      font-family: var(--f-display);
-      font-size: clamp(4rem, 8vw, 7.5rem);
-      line-height: 0.88;
-      letter-spacing: 0.02em;
-    }
-    .cta-headline em {
-      font-family: var(--f-serif);
-      font-style: italic;
-      color: var(--fg-2);
-      font-size: 0.8em;
-      display: block;
-      letter-spacing: 0;
-      margin-top: 6px;
-    }
-    .cta-actions {
-      display: flex;
-      align-items: center;
-      gap: 24px;
-      flex-wrap: wrap;
-    }
-    .cta-right {
-      padding: clamp(60px, 8vw, 100px) 0 clamp(60px, 8vw, 100px) clamp(24px, 4vw, 60px);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-    .cta-detail-block {
-      border-bottom: 1px solid var(--line);
-      padding-bottom: 28px;
-      margin-bottom: 28px;
-    }
-    .cta-detail-block:last-child {
-      border-bottom: none;
-      margin-bottom: 0;
-      padding-bottom: 0;
-    }
-    .cta-detail-label {
-      font-size: 9.5px;
-      font-weight: 700;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--fg-3);
-      margin-bottom: 8px;
-    }
-    .cta-detail-val {
-      font-size: 14px;
-      color: var(--fg);
-      font-weight: 500;
-    }
-    .cta-detail-val a { color: var(--accent); }
+    .cta-section { border-top: 1px solid var(--line); }
+    .cta-inner { display: grid; grid-template-columns: 1fr 1fr; min-height: 480px; }
+    .cta-left { padding: clamp(60px, 8vw, 100px) clamp(24px, 4vw, 60px) clamp(60px, 8vw, 100px) 0; border-right: 1px solid var(--line); display: flex; flex-direction: column; justify-content: space-between; }
+    .cta-headline { font-family: var(--f-display); font-size: clamp(4rem, 8vw, 7.5rem); line-height: 0.88; letter-spacing: 0.02em; }
+    .cta-actions { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; margin-top: 20px;}
+    .cta-right { padding: clamp(60px, 8vw, 100px) 0 clamp(60px, 8vw, 100px) clamp(24px, 4vw, 60px); display: flex; flex-direction: column; justify-content: space-between; }
+    .cta-detail-block { border-bottom: 1px solid var(--line); padding-bottom: 28px; margin-bottom: 28px; }
+    .cta-detail-block:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+    .cta-detail-label { font-size: 9.5px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--fg-3); margin-bottom: 8px; }
+    .cta-detail-val { font-size: 14px; color: var(--fg); font-weight: 400; }
 
-    /* ─── FOOTER ─── */
-    footer {
-      background: var(--bg-1);
-      border-top: 1px solid var(--line);
-      padding-block: 32px;
-    }
-    .footer-inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 16px;
-    }
-    .footer-logo {
-      font-family: var(--f-ui);
-      font-size: 13px;
-      font-weight: 600;
-      letter-spacing: 0.06em;
-      color: var(--fg-2);
-    }
-    .footer-logo em {
-      font-style: normal;
-      color: var(--accent);
-    }
-    .footer-links {
-      display: flex;
-      gap: 20px;
-    }
-    .footer-links a {
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--fg-3);
-      transition: color 0.18s;
-    }
-    .footer-links a:hover { color: var(--fg); }
-    .footer-copy {
-      width: 100%;
-      padding-top: 24px;
-      border-top: 1px solid var(--line);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-    .footer-copy span {
-      font-size: 11px;
-      color: var(--fg-3);
-    }
-    .footer-socials {
-      display: flex;
-      gap: 16px;
-    }
-    .footer-socials a {
-      color: var(--fg-3);
-      font-size: 14px;
-      transition: color 0.18s;
-    }
-    .footer-socials a:hover { color: var(--fg); }
-
-    /* ─── SCROLL REVEAL ─── */
-    [data-reveal] {
-      opacity: 0;
-      transform: translateY(18px);
-      transition: opacity 0.65s var(--ease), transform 0.65s var(--ease);
-    }
-    [data-reveal].in { opacity: 1; transform: none; }
-    [data-reveal="delay-1"] { transition-delay: 0.08s; }
-    [data-reveal="delay-2"] { transition-delay: 0.16s; }
-    [data-reveal="delay-3"] { transition-delay: 0.24s; }
-
-    /* ─── RESPONSIVE ─── */
+    /* RESPONSIVE */
     @media (max-width: 960px) {
       .hero { grid-template-columns: 1fr; min-height: auto; }
       .hero-right { height: 500px; border-left: none; border-top: 1px solid var(--line); }
-      .price-chip { top: 20px; right: 20px; padding: 12px 16px; }
-      .price-chip-amount { font-size: 2rem; }
-      .share-chip { bottom: 20px; right: 20px; padding: 8px 12px; }
-      .hero-left { padding: 80px 24px 60px 24px; } 
-      .services-header { grid-template-columns: 1fr; gap: 24px; }
+      .services-header, .faq-header { grid-template-columns: 1fr; gap: 24px; }
       .services-list { grid-template-columns: 1fr; }
       .service-item { border-right: none; border-bottom: 1px solid var(--line); }
-      .service-item:last-child { border-bottom: none; }
-      .pricing-grid { grid-template-columns: 1fr; }
-      .pricing-col { border-right: none; border-bottom: 1px solid var(--line); }
-      .pricing-col:last-child { border-bottom: none; }
-      .compare-header, .faq-header { grid-template-columns: 1fr; gap: 20px; }
       .cta-inner { grid-template-columns: 1fr; }
       .cta-left { border-right: none; border-bottom: 1px solid var(--line); }
       .cta-right { padding-left: 0; }
-      .ba-header { grid-template-columns: 1fr; gap: 20px; }
     }
-
-    @media (max-width: 768px) {
-      .calc-body { grid-template-columns: 1fr; }
-      .calc-inputs { border-right: none; border-bottom: 1px solid var(--line); }
-    }
-
-    @media (max-width: 480px) {
-      :root { --section: 64px; }
-      .hero-h1 { font-size: 4.5rem; }
-    }
+    @media (max-width: 768px) { .calc-body { grid-template-columns: 1fr; } .calc-inputs { border-right: none; border-bottom: 1px solid var(--line); } }
   </style>
 </head>
 <body>
@@ -1253,223 +258,128 @@
         </h1>
         <p class="hero-sub">
           Modern self-standing digital kiosks, 360° video stations, and drone coverage for weddings, corporate events, and private parties across Tampa, St. Pete, and Orlando.
+          <span class="policy-box">
+            Please note: We exclusively service <strong>public venues and event spaces.</strong> We do not deliver to private homes or apartments.
+          </span>
         </p>
         <div class="hero-ctas">
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeLmYdneIY1dy_6ed7LCDb09CWdvwEvTNIg1AmlZkELuOLvoA/viewform?usp=publish-editor" target="_blank" class="btn btn-primary">Book Your Date</a>
-          <a href="#services" class="btn-ghost btn">See Services <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeLmYdneIY1dy_6ed7LCDb09CWdvwEvTNIg1AmlZkELuOLvoA/viewform?usp=sharing&ouid=110282038741252949451" target="_blank" class="btn btn-primary">Book Your Date</a>
         </div>
-        <p class="hero-price-note">Starting at <strong>$75 / hour</strong> &nbsp;·&nbsp; Registered &amp; Insured &nbsp;·&nbsp; No hidden fees &nbsp;·&nbsp; Instant sharing</p>
+        <p class="hero-price-note">Starting at <strong>$80 / hour</strong> &nbsp;·&nbsp; No Delivery Fee &nbsp;·&nbsp; Venues Only</p>
       </div>
     </div>
 
     <div class="hero-right">
-      <img src="photoboothpad.png" class="hero-right-img" alt="Blue Moon Studios digital photobooth kiosk" loading="eager" onerror="this.style.background='var(--bg-2)'">
+      <img src="photoboothpad.png" class="hero-right-img" alt="Digital photobooth kiosk" loading="eager" onerror="this.style.background='var(--bg-2)'">
       <div class="price-chip">
-        <span class="price-chip-amount">$75</span>
+        <span class="price-chip-amount">$80</span>
         <span class="price-chip-label">per hour</span>
-      </div>
-      <div class="share-chip">
-        <div class="share-icons">
-          <div class="share-icon-item"><i class="fa-solid fa-message" aria-hidden="true"></i></div>
-          <div class="share-icon-item"><i class="fa-solid fa-envelope" aria-hidden="true"></i></div>
-          <div class="share-icon-item"><i class="fa-brands fa-apple" aria-hidden="true"></i></div>
-        </div>
-        <span class="share-chip-label">Instant Sharing</span>
       </div>
     </div>
   </header>
 
   <main>
-
     <section class="section" id="services">
       <div class="wrap">
         <div class="services-header">
-          <div data-reveal>
-            <span style="font-size:10.5px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--accent);">What We Offer</span>
+          <div>
+            <span style="font-size:10.5px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--accent);">Our Packages</span>
             <h2 class="services-title" style="margin-top:16px;">
-              THREE<br>WAYS TO<br>ELEVATE
-              <em>your event</em>
+              STRAIGHTFORWARD<br>
+              <em>pricing</em>
             </h2>
           </div>
-          <p class="services-lead" data-reveal="delay-1">Full-service digital photobooth kiosks, 360° video, and aerial drone media for weddings, corporate events, quinceañeras, and private parties across Tampa Bay and Central Florida.</p>
+          <p class="services-lead">Pick the package that fits your event. Free props and an inflatable backdrop are included upon request!</p>
         </div>
 
         <div class="services-list">
-          <article class="service-item" data-reveal>
+          <article class="service-item">
             <div class="service-num">01</div>
-            <h3 class="service-title">Self-Standing Digital Photobooth</h3>
-            <p class="service-desc">Our flagship sleek kiosk pairs professional-grade studio lighting with an interactive touchscreen — built for high-volume, instant digital party favors.</p>
-            <div class="service-price">$75</div>
+            <h3 class="service-title">Digital Photobooth</h3>
+            <p class="service-desc">Our flagship sleek kiosk paired with professional-grade studio lighting. Unlimited high-res digital captures sent instantly via SMS/Email.</p>
+            <div class="service-price">$80</div>
             <div class="service-price-note">per hour</div>
             <ul class="service-features">
-              <li>Unlimited high-res digital captures</li>
-              <li>Pro LED ring lighting</li>
-              <li>SMS, Email &amp; AirDrop sharing</li>
-              <li>Custom start screen branding</li>
-              <li>Digital props &amp; filters</li>
+              <li>Digital only (No physical prints)</li>
+              <li>Free Props & Inflatable Backdrop (if requested)</li>
+              <li>Instant SMS & Email sharing</li>
             </ul>
           </article>
 
-          <article class="service-item" data-reveal="delay-1">
+          <article class="service-item">
             <div class="service-num">02</div>
-            <h3 class="service-title">360° Video Station</h3>
-            <p class="service-desc">High-energy 360° platform capture. Guests share dynamic, social-ready video clips instantly — built for weddings, corporate events, and anything worth showing off.</p>
-            <div class="service-price">+$75</div>
-            <div class="service-price-note">per hour add-on</div>
+            <h3 class="service-title">Physical Prints Booth</h3>
+            <p class="service-desc">Get the digital experience PLUS physical photo strips printed on the spot. Great for tangible party favors.</p>
+            <div class="service-price">$90</div>
+            <div class="service-price-note">per hour</div>
             <ul class="service-features">
-              <li>Unlimited 360° video spins</li>
-              <li>Instant social media-ready clips</li>
-              <li>High-quality digital sharing</li>
+              <li>Up to 50 physical prints MAX</li>
+              <li>Includes all digital features</li>
+              <li>Free Props & Backdrop (if requested)</li>
             </ul>
           </article>
 
-          <article class="service-item" data-reveal="delay-2">
+          <article class="service-item">
             <div class="service-num">03</div>
-            <h3 class="service-title">Aerial Drone Coverage</h3>
-            <p class="service-desc">Capture the scale of your venue from above. HOVERAIR 4K cinematography systems for dynamic aerial highlights impossible from the ground.</p>
-            <div class="service-price">+$70</div>
-            <div class="service-price-note">flat add-on</div>
+            <h3 class="service-title">Full Day Digital Rate</h3>
+            <p class="service-desc">Having a long event? Skip the hourly counting. Rent the digital booth for any time over 3 hours for one flat rate.</p>
+            <div class="service-price">$300</div>
+            <div class="service-price-note">Flat Rate (Over 3 Hours)</div>
             <ul class="service-features">
-              <li>HOVERAIR cinematography systems</li>
-              <li>4K dynamic footage delivery</li>
-              <li>Aerial event highlights</li>
+              <li>Entire event coverage (digital only)</li>
+              <li>Add unlimited prints for +$50 flat</li>
+              <li>Free Props & Backdrop (if requested)</li>
             </ul>
           </article>
         </div>
-      </div>
-    </section>
 
-    <section class="ba-section section" id="ai-edit">
-      <div class="wrap">
-        <div class="ba-header">
-          <div data-reveal>
-            <span style="font-size:10.5px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--accent);">AI Enhancement</span>
-            <h2 class="ba-title" style="margin-top:16px;">THE AI<br>EDIT<br>DIFFERENCE</h2>
-          </div>
-          <p class="ba-lead" data-reveal="delay-1">Our booths integrate advanced studio software with optional AI edits that transform standard event captures into glowing, print-ready masterpieces. Drag to compare.</p>
-        </div>
-
-        <div class="ba-wrapper" id="baWrapper" data-reveal>
-          <img src="after.jpg" class="ba-img-after" alt="After: AI-edited event photo" loading="lazy" onerror="this.style.cssText='background:var(--bg-2);height:520px;width:100%;'">
-          <img src="before.jpg" class="ba-img-before" id="baOverlay" alt="Before: original capture" loading="lazy" onerror="this.style.display='none'">
-          <div class="ba-divider" id="baDivider"></div>
-          <div class="ba-handle-pill" id="baHandlePill">
-            <i class="fa-solid fa-left-right" style="font-size:10px;"></i>
-            Drag
-          </div>
-          <div class="ba-labels">
-            <span class="ba-tag">Before</span>
-            <span class="ba-tag">After</span>
-          </div>
-          <input type="range" class="ba-input" id="baSlider" min="0" max="100" value="50"
-            aria-label="Drag to compare before and after AI photo editing">
-        </div>
-      </div>
-    </section>
-
-    <section class="gallery-section section" id="work">
-      <div class="wrap">
-        <div class="gallery-header" data-reveal>
-          <span style="font-size:10.5px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--accent);">Gallery</span>
-          <h2 class="gallery-title" style="margin-top:16px;">OUR<br>WORK</h2>
-        </div>
-        <div class="gallery-grid" data-reveal="delay-1">
-          <img src="work1.png" alt="Our Work 1" class="gallery-img" loading="lazy" onclick="openModal(this.src)" onerror="this.style.background='var(--bg-2)'">
-          <img src="work2.png" alt="Our Work 2" class="gallery-img" loading="lazy" onclick="openModal(this.src)" onerror="this.style.background='var(--bg-2)'">
-          <img src="work3.png" alt="Our Work 3" class="gallery-img" loading="lazy" onclick="openModal(this.src)" onerror="this.style.background='var(--bg-2)'">
-          <img src="work4.png" alt="Our Work 4" class="gallery-img" loading="lazy" onclick="openModal(this.src)" onerror="this.style.background='var(--bg-2)'">
-        </div>
-      </div>
-    </section>
-
-    <section class="gallery-section section" id="collabs" style="border-top: none;">
-      <div class="wrap">
-        <div class="gallery-header" data-reveal>
-          <span style="font-size:10.5px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--accent);">Partnerships</span>
-          <h2 class="gallery-title" style="margin-top:16px;">OUR<br>COLLABS</h2>
-        </div>
-        <div class="gallery-grid" data-reveal="delay-1">
-          <img src="collab1.png" alt="Collab 1" class="gallery-img" loading="lazy" onclick="openModal(this.src)" onerror="this.style.background='var(--bg-2)'">
-          <img src="collab2.png" alt="Collab 2" class="gallery-img" loading="lazy" onclick="openModal(this.src)" onerror="this.style.background='var(--bg-2)'">
-          <img src="collab3.png" alt="Collab 3" class="gallery-img" loading="lazy" onclick="openModal(this.src)" onerror="this.style.background='var(--bg-2)'">
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="pricing">
-      <div class="wrap">
-        <div class="pricing-header" data-reveal>
-          <span style="font-size:10.5px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--accent);">Transparent Pricing</span>
-          <h2 class="pricing-title" style="margin-top:16px;">SIMPLE.<br>HONEST.<br>RATES.</h2>
-          <p class="pricing-sub" style="margin-top:16px;">No packages to decode, no hidden fees. Clear hourly rates and flat add-ons — pick what fits your event.</p>
-        </div>
-
-        <div class="pricing-grid" data-reveal>
-          <div class="pricing-col">
-            <div class="pricing-col-label">Core Rental</div>
-            <div class="pricing-col-amount">$75</div>
-            <div class="pricing-col-unit">per hour</div>
-            <p class="pricing-col-desc">The essential self-standing digital booth setup. Everything you need for a seamless photo experience at any event.</p>
-            <ul class="pricing-col-items">
-              <li>Sleek digital kiosk station</li>
-              <li>Professional ring lighting</li>
-              <li>SMS, Email &amp; AirDrop sharing</li>
-              <li>Digital props &amp; filters</li>
-              <li>Custom start screen branding</li>
-            </ul>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeLmYdneIY1dy_6ed7LCDb09CWdvwEvTNIg1AmlZkELuOLvoA/viewform?usp=publish-editor" target="_blank" class="btn btn-outline">Book Digital Booth</a>
-          </div>
-
-          <div class="pricing-col">
-            <div class="pricing-col-label">Add-Ons</div>
-            <div class="pricing-col-amount" style="color:var(--accent);">+$70–$150</div>
-            <div class="pricing-col-unit">per add-on</div>
-            <p class="pricing-col-desc">Elevate your core rental with any combination of premium experiences tailored to your event.</p>
-            <ul class="pricing-col-items">
-              <li>360° Video Station — +$75 /hr</li>
-              <li>Aerial Drone Coverage — +$70 flat</li>
-              <li>Audio Guestbook Phone — +$150 flat</li>
-              <li>Custom 360 Overlay — +$50 flat</li>
-            </ul>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeLmYdneIY1dy_6ed7LCDb09CWdvwEvTNIg1AmlZkELuOLvoA/viewform?usp=publish-editor" target="_blank" class="btn btn-primary">Build My Package</a>
-          </div>
-        </div>
-
-        <div class="calc-section" data-reveal>
+        <div class="calc-section">
           <div class="calc-top">
             <div>
-              <div class="calc-top-label">Estimate Your Cost</div>
-              <div class="calc-top-title">Build a Custom Package</div>
+              <div class="calc-top-label">Pricing Calculator</div>
+              <div class="calc-top-title">Estimate Your Cost</div>
             </div>
           </div>
           <div class="calc-body">
             <div class="calc-inputs">
               <div class="calc-field">
-                <label>Core Rental</label>
+                <label>1. Select Base Package</label>
                 <div class="calc-options">
                   <label class="calc-option">
-                    <input type="radio" name="calc_base" value="75" checked onchange="calculateTotal()">
-                    Digital Booth — $75/hr
+                    <input type="radio" name="calc_base" value="digital" checked onchange="calculateTotal()">
+                    Digital Booth — $80/hr
+                  </label>
+                  <label class="calc-option">
+                    <input type="radio" name="calc_base" value="physical" onchange="calculateTotal()">
+                    Physical Prints (Up to 50 max) — $90/hr
+                  </label>
+                  <label class="calc-option">
+                    <input type="radio" name="calc_base" value="fullday" onchange="calculateTotal()">
+                    Full Day Digital Rate (Above 3 Hours) — $300 Flat
                   </label>
                 </div>
               </div>
 
-              <div class="calc-field">
-                <label>Hours — <span id="hoursDisplay" style="color:var(--accent);">4</span> hrs</label>
+              <div class="calc-field" id="hoursField">
+                <label>2. Number of Hours — <span id="hoursDisplay" style="color:var(--accent);">2</span> hrs</label>
                 <div class="calc-hours-row">
-                  <input type="range" id="calcHours" min="1" max="8" value="4"
-                    oninput="document.getElementById('hoursDisplay').textContent=this.value; calculateTotal();">
-                  <div class="calc-hours-val" id="hoursVal">4</div>
+                  <input type="range" id="calcHours" min="1" max="8" value="2" oninput="calculateTotal()">
+                  <div class="calc-hours-val" id="hoursVal">2</div>
                 </div>
+                <div style="font-size: 10.5px; color: var(--fg-3); margin-top: 8px; font-style: italic;">*Hours slider is disabled if the Full Day Flat Rate is selected.</div>
               </div>
 
               <div class="calc-field">
-                <label>Optional Add-Ons</label>
+                <label>3. Add-Ons & Freebies</label>
                 <div class="calc-options">
-                  <label class="calc-option"><input type="checkbox" class="calc_addon" data-type="hourly" value="75" onchange="calculateTotal()"> 360° Video Station — +$75/hr</label>
-                  <label class="calc-option"><input type="checkbox" class="calc_addon" data-type="flat" value="70" onchange="calculateTotal()"> Aerial Drone Coverage — +$70 flat</label>
-                  <label class="calc-option"><input type="checkbox" class="calc_addon" data-type="flat" value="150" onchange="calculateTotal()"> Audio Guestbook Phone — +$150 flat</label>
-                  <label class="calc-option"><input type="checkbox" class="calc_addon" data-type="flat" value="50" onchange="calculateTotal()"> Custom 360 Overlay — +$50 flat</label>
+                  <label class="calc-option">
+                    <input type="checkbox" id="addon_unlimited" value="50" onchange="calculateTotal()"> 
+                    Unlimited Prints Upgrade — $50 Flat Fee
+                  </label>
+                  <label class="calc-option" style="border-color: var(--accent); color: var(--fg);">
+                    <input type="checkbox" checked disabled> 
+                    Props & Inflatable Backdrop — FREE
+                  </label>
                 </div>
               </div>
             </div>
@@ -1477,139 +387,67 @@
             <div class="calc-total-panel">
               <div>
                 <div class="calc-total-label">Estimated Total</div>
-                <div class="calc-total-amount" id="calcTotal">$300</div>
-                <div class="calc-total-note" style="margin-top:10px;">Estimate only. Final quote provided after inquiry.</div>
+                <div class="calc-total-amount" id="calcTotal">$160</div>
+                <div class="calc-total-note">Estimate only. No delivery fees in our service area.<br><strong>Public event venues only.</strong></div>
               </div>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSeLmYdneIY1dy_6ed7LCDb09CWdvwEvTNIg1AmlZkELuOLvoA/viewform?usp=publish-editor" target="_blank" class="btn btn-primary" style="margin-top:32px;">Get Exact Quote</a>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSeLmYdneIY1dy_6ed7LCDb09CWdvwEvTNIg1AmlZkELuOLvoA/viewform?usp=sharing&ouid=110282038741252949451" target="_blank" class="btn btn-primary" style="margin-top:32px;">Go to Booking Form</a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="compare-section section" id="compare">
+    <section class="section" id="faq" style="background: var(--bg-1);">
       <div class="wrap">
-        <div class="compare-header" data-reveal>
-          <h2 class="compare-title">WHY<br>BLUE<br>MOON?</h2>
-          <p class="compare-note">Tampa Bay photobooth rentals average $150–$250/hr. We charge $75. Here's the full breakdown — you decide.</p>
+        <div class="faq-header">
+          <h2 class="faq-title">PLEASE READ<br>BEFORE BOOKING</h2>
+          <p class="faq-lead">We want to make this as simple as possible. Please read these brief guidelines before filling out the form.</p>
         </div>
 
-        <table class="compare-table" data-reveal>
-          <caption style="position:absolute;width:1px;height:1px;overflow:hidden;">Price comparison between Blue Moon Studios and Tampa Bay competitors</caption>
-          <thead>
-            <tr>
-              <th scope="col">Service</th>
-              <th scope="col">Avg. Competitor</th>
-              <th scope="col" style="color:var(--accent);">Blue Moon Studios</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Digital Photobooth Rental (per hour)</td>
-              <td class="td-them">$150 – $250 / hr</td>
-              <td class="td-us">$75 / hr</td>
-            </tr>
-            <tr>
-              <td>Drone Coverage Add-On</td>
-              <td class="td-them">$150+ / hr</td>
-              <td class="td-us">$70 flat</td>
-            </tr>
-            <tr>
-              <td>360° Video Station Add-On</td>
-              <td class="td-them">$100 – $150 / hr</td>
-              <td class="td-us">$75 / hr</td>
-            </tr>
-            <tr>
-              <td>Complete Experience Bundle</td>
-              <td class="td-them">$400+ / hr</td>
-              <td class="td-us">~$175 – $200 / hr</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <section class="testimonials-section section" id="reviews">
-      <div class="wrap">
-        <div class="testimonials-header" data-reveal>
-          <span style="font-size:10.5px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--accent);">Testimonials</span>
-          <h2 class="testimonials-title" style="margin-top:16px;">KIND<br>WORDS</h2>
-        </div>
-        <div class="testimonials-grid">
-          <div class="testimonial-card" data-reveal>
-            <div class="testimonial-stars">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-btn" aria-expanded="false" onclick="toggleFaq(this)">
+              Can I rent this for my house, apartment, or backyard?
+              <span class="faq-indicator"><i class="fa-solid fa-plus"></i></span>
+            </button>
+            <div class="faq-answer">
+              <strong style="color:var(--fg);">We strictly service public locations and official venues</strong> (event halls, hotels, restaurants, corporate offices, etc.). Please do not fill out the form if your event is located at a private residence.
             </div>
-            <p class="testimonial-text">"Had an amazing time renting out the photobooth Kevin was so kind and professional would definitely rent it out again!"</p>
-            <div class="testimonial-author">Mitzy</div>
-            <div class="testimonial-meta">Mar 15, 2026 · 1 review written</div>
           </div>
-          <div class="testimonial-card" data-reveal="delay-1">
-            <div class="testimonial-stars">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+
+          <div class="faq-item">
+            <button class="faq-btn" aria-expanded="false" onclick="toggleFaq(this)">
+              What do you mean by "strips" and physical prints?
+              <span class="faq-indicator"><i class="fa-solid fa-plus"></i></span>
+            </button>
+            <div class="faq-answer">
+              "Strips" are standard 4x6 prints that contain <strong>two identical strips of the exact same picture.</strong> So if you take 1 photo, the machine prints 1 sheet containing 2 strips so you can split it with a friend. Our $90/hr rate gives you up to 50 prints maximum. If you want unlimited prints, it's a flat $50 upgrade.
             </div>
-            <p class="testimonial-text">"Photobooth service was amazing"</p>
-            <div class="testimonial-author">Vraj</div>
-            <div class="testimonial-meta">Mar 26, 2026 · 4 reviews written</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="faq">
-      <div class="wrap">
-        <div class="faq-header" data-reveal>
-          <h2 class="faq-title">COMMON<br>QUESTIONS</h2>
-          <p class="faq-lead">Everything you need to know before booking a photobooth rental in Tampa Bay or Central Florida.</p>
-        </div>
-
-        <div class="faq-list" data-reveal>
-          <div class="faq-item">
-            <button class="faq-btn" aria-expanded="false" onclick="toggleFaq(this)">
-              How much does photobooth rental cost in Tampa?
-              <span class="faq-indicator"><i class="fa-solid fa-plus" aria-hidden="true"></i></span>
-            </button>
-            <div class="faq-answer">Our self-standing digital photobooth kiosks start at <strong style="color:var(--fg);">$75 per hour</strong> — significantly less than the Tampa Bay average of $150–$250/hr. Transparent pricing, no hidden fees.</div>
           </div>
 
           <div class="faq-item">
             <button class="faq-btn" aria-expanded="false" onclick="toggleFaq(this)">
-              What areas do you serve?
-              <span class="faq-indicator"><i class="fa-solid fa-plus" aria-hidden="true"></i></span>
+              What areas do you serve? Is there a delivery fee?
+              <span class="faq-indicator"><i class="fa-solid fa-plus"></i></span>
             </button>
-            <div class="faq-answer">We deliver to <strong style="color:var(--fg);">Tampa, St. Petersburg, Clearwater, Orlando</strong>, and surrounding areas throughout Tampa Bay and Central Florida. Contact us for delivery to other locations.</div>
+            <div class="faq-answer">
+              <strong>There is NO delivery fee</strong> for our core service area! We exclusively serve: Port Richey down to St. Pete (the Pasco/Pinellas side), Wesley Chapel, all of Tampa and Hillsborough County, and within 45 minutes of Tampa (such as Brandon or South Tampa).
+            </div>
           </div>
 
           <div class="faq-item">
             <button class="faq-btn" aria-expanded="false" onclick="toggleFaq(this)">
-              Do your photobooths offer instant photo sharing?
-              <span class="faq-indicator"><i class="fa-solid fa-plus" aria-hidden="true"></i></span>
+              What information do you need from me when I book?
+              <span class="faq-indicator"><i class="fa-solid fa-plus"></i></span>
             </button>
-            <div class="faq-answer">Yes — every rental includes our digital sharing kiosk with instant delivery via <strong style="color:var(--fg);">SMS, Email, and AirDrop</strong> directly to guests' phones. No app required.</div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-btn" aria-expanded="false" onclick="toggleFaq(this)">
-              Can I add a 360° video station or drone coverage?
-              <span class="faq-indicator"><i class="fa-solid fa-plus" aria-hidden="true"></i></span>
-            </button>
-            <div class="faq-answer">Absolutely. Add a <strong style="color:var(--fg);">360° video platform</strong> for +$75/hr or <strong style="color:var(--fg);">aerial drone coverage</strong> as a flat +$70 add-on to any photobooth rental package.</div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-btn" aria-expanded="false" onclick="toggleFaq(this)">
-              What types of events do you service?
-              <span class="faq-indicator"><i class="fa-solid fa-plus" aria-hidden="true"></i></span>
-            </button>
-            <div class="faq-answer">Weddings, sweet 16s, quinceañeras, corporate events, birthday parties, graduation parties, holiday parties, festivals, and more throughout Tampa Bay and Central Florida.</div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-btn" aria-expanded="false" onclick="toggleFaq(this)">
-              How do I book?
-              <span class="faq-indicator"><i class="fa-solid fa-plus" aria-hidden="true"></i></span>
-            </button>
-            <div class="faq-answer">Fill out our <a href="https://docs.google.com/forms/d/e/1FAIpQLSeLmYdneIY1dy_6ed7LCDb09CWdvwEvTNIg1AmlZkELuOLvoA/viewform?usp=publish-editor" target="_blank" rel="noopener">online booking form</a> with your event details. We respond within 24 hours to confirm availability and finalize your package.</div>
+            <div class="faq-answer">
+              When you click the booking form, please have the following ready:
+              <br><br>
+              1. The exact Date and Time of the event.<br>
+              2. The exact number of hours you want to rent it for.<br>
+              3. The name and address of the PUBLIC VENUE.<br>
+              4. Whether you want the FREE props and inflatable backdrop included!
+            </div>
           </div>
         </div>
       </div>
@@ -1618,158 +456,77 @@
     <section class="cta-section" id="contact">
       <div class="wrap">
         <div class="cta-inner">
-          <div class="cta-left" data-reveal>
+          <div class="cta-left">
             <h2 class="cta-headline">
-              LET'S<br>MAKE IT<br>
-              <em>unforgettable</em>
+              READY TO<br>BOOK?
             </h2>
             <div class="cta-actions">
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSeLmYdneIY1dy_6ed7LCDb09CWdvwEvTNIg1AmlZkELuOLvoA/viewform?usp=publish-editor" target="_blank" rel="noopener" class="btn btn-primary" style="font-size:13px;padding:15px 30px;">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSeLmYdneIY1dy_6ed7LCDb09CWdvwEvTNIg1AmlZkELuOLvoA/viewform?usp=sharing&ouid=110282038741252949451" target="_blank" rel="noopener" class="btn btn-primary" style="font-size:13px;padding:15px 30px;">
                 Open Booking Form
-              </a>
-              <a href="https://www.instagram.com/tampabluemoonstudios/" target="_blank" rel="noopener" class="btn-ghost btn">
-                View our work <i class="fa-solid fa-arrow-right"></i>
               </a>
             </div>
           </div>
 
-          <div class="cta-right" data-reveal="delay-1">
+          <div class="cta-right">
             <div class="cta-detail-block">
-              <div class="cta-detail-label">Response Time</div>
-              <div class="cta-detail-val">Within 24 hours of inquiry</div>
+              <div class="cta-detail-label">Important Reminder</div>
+              <div class="cta-detail-val" style="color: var(--accent); font-weight: 600;">We require the Date, Time, Hours, and Public Venue Name in the form.</div>
             </div>
             <div class="cta-detail-block">
               <div class="cta-detail-label">Service Area</div>
-              <div class="cta-detail-val">Tampa · St. Pete · Clearwater · Orlando</div>
-            </div>
-            <div class="cta-detail-block">
-              <div class="cta-detail-label">Summer Offer</div>
-              <div class="cta-detail-val">Introductory rates available through August 31st — secure your date early.</div>
-            </div>
-            <div class="cta-detail-block">
-              <div class="cta-detail-label">Follow Along</div>
-              <div class="cta-detail-val">
-                <a href="https://www.instagram.com/tampabluemoonstudios/" target="_blank" rel="noopener">@tampabluemoonstudios</a>
-              </div>
+              <div class="cta-detail-val">Port Richey to St. Pete, Wesley Chapel, Tampa & Hillsborough.</div>
             </div>
           </div>
         </div>
       </div>
     </section>
-
   </main>
 
-  <footer>
-    <div class="wrap">
-      <div class="footer-inner">
-        <div class="footer-logo"><em>Blue Moon</em> Studios</div>
-        <nav class="footer-links" aria-label="Footer navigation">
-          <a href="#services">Services</a>
-          <a href="#pricing">Pricing</a>
-          <a href="#faq">FAQ</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </div>
-      <div class="footer-copy">
-        <span>&copy; 2026 Blue Moon Studios · Registered &amp; Insured · Tampa, FL · Photobooth Rentals Tampa Bay</span>
-        <div class="footer-socials">
-          <a href="https://www.instagram.com/tampabluemoonstudios/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://www.facebook.com/people/Blu-Moon/61588332764907/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="https://linktr.ee/bluemoonstudiosservices" target="_blank" rel="noopener" aria-label="Linktree"><i class="fa-solid fa-link"></i></a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <div class="modal-overlay" id="imageModal" onclick="closeModal(event)">
-    <button class="modal-close" aria-label="Close modal">&times;</button>
-    <img src="" alt="Enlarged view" class="modal-img" id="modalImage">
-  </div>
-
   <script>
-    /* ── Before/After slider ── */
-    function setSlider(pct) {
-      const clip = `polygon(0 0,${pct}% 0,${pct}% 100%,0 100%)`;
-      const overlay = document.getElementById('baOverlay');
-      const divider = document.getElementById('baDivider');
-      const pill    = document.getElementById('baHandlePill');
-      if (overlay) overlay.style.clipPath = clip;
-      if (divider) divider.style.left = pct + '%';
-      if (pill)    pill.style.left = pct + '%';
-    }
-    const baSlider = document.getElementById('baSlider');
-    if (baSlider) {
-      baSlider.addEventListener('input', e => setSlider(e.target.value));
-      setSlider(50);
-    }
-    const baWrapper = document.getElementById('baWrapper');
-    if (baWrapper) {
-      baWrapper.addEventListener('touchmove', e => {
-        e.preventDefault();
-        const r = baWrapper.getBoundingClientRect();
-        const pct = Math.min(100, Math.max(0, ((e.touches[0].clientX - r.left) / r.width) * 100));
-        baSlider.value = pct;
-        setSlider(pct);
-      }, { passive: false });
-    }
-
-    /* ── Image Modal ── */
-    const imageModal = document.getElementById('imageModal');
-    const modalImage = document.getElementById('modalImage');
-
-    function openModal(src) {
-      modalImage.src = src;
-      imageModal.classList.add('active');
-      document.body.style.overflow = 'hidden'; // Stop background scrolling
-    }
-
-    function closeModal(e) {
-      // Close if user clicks the background overlay or the close button
-      if (!e || e.target === imageModal || e.target.classList.contains('modal-close')) {
-        imageModal.classList.remove('active');
-        document.body.style.overflow = ''; // Restore background scrolling
-        // Clear src after animation so it doesn't flash the old image next time
-        setTimeout(() => { 
-          if (!imageModal.classList.contains('active')) {
-            modalImage.src = ''; 
-          }
-        }, 300);
-      }
-    }
-
-    // Close modal on Escape key press
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && imageModal.classList.contains('active')) {
-        closeModal();
-      }
-    });
-
-    /* ── Calculator ── */
+    /* ── Calculator Logic ── */
     function calculateTotal() {
-      const base  = parseFloat(document.querySelector('input[name="calc_base"]:checked')?.value || 75);
-      const hours = parseFloat(document.getElementById('calcHours').value);
+      const baseType = document.querySelector('input[name="calc_base"]:checked').value;
+      const hoursSlider = document.getElementById('calcHours');
+      const hours = parseFloat(hoursSlider.value);
+      
+      document.getElementById('hoursDisplay').textContent = hours;
       document.getElementById('hoursVal').textContent = hours;
-      let total = base * hours;
-      document.querySelectorAll('.calc_addon:checked').forEach(a => {
-        total += a.dataset.type === 'hourly' ? parseFloat(a.value) * hours : parseFloat(a.value);
-      });
-      document.getElementById('calcTotal').textContent = '$' + total.toLocaleString();
+      
+      let total = 0;
+      const hoursField = document.getElementById('hoursField');
+
+      // Base pricing logic
+      if (baseType === 'digital') {
+        total = 80 * hours;
+        hoursField.style.opacity = '1';
+        hoursSlider.disabled = false;
+      } else if (baseType === 'physical') {
+        total = 90 * hours;
+        hoursField.style.opacity = '1';
+        hoursSlider.disabled = false;
+      } else if (baseType === 'fullday') {
+        total = 300; // Flat rate ignores hours slider
+        hoursField.style.opacity = '0.5';
+        hoursSlider.disabled = true;
+      }
+
+      // Add-on logic
+      if (document.getElementById('addon_unlimited').checked) {
+        total += 50;
+      }
+
+      document.getElementById('calcTotal').textContent = '$' + total;
     }
+    
+    // Initialize calculator
     calculateTotal();
 
-    /* ── FAQ ── */
+    /* ── FAQ Toggle ── */
     function toggleFaq(btn) {
       const answer = btn.nextElementSibling;
-      const open   = answer.classList.toggle('open');
+      const open = answer.classList.toggle('open');
       btn.setAttribute('aria-expanded', open);
     }
-
-    /* ── Scroll Reveal (only on select elements) ── */
-    const revealEls = document.querySelectorAll('[data-reveal]');
-    const ro = new IntersectionObserver((entries) => {
-      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); ro.unobserve(e.target); } });
-    }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
-    revealEls.forEach(el => ro.observe(el));
   </script>
 </body>
 </html>
