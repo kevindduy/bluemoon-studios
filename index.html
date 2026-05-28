@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
   <title>Tampa Photobooth Rental | Public Venues Only | Blue Moon Studios</title>
-  <meta name="description" content="Rent Tampa Bay's sleekest self-standing digital photobooth kiosk from $80/hr. Public venues only. Serving Port Richey, St. Pete, Wesley Chapel, and Tampa without delivery fees.">
+  <meta name="description" content="Rent Tampa Bay's sleekest self-standing digital photobooth kiosk with custom packages. Public venues only. Serving Port Richey, St. Pete, Wesley Chapel, and Tampa without delivery fees.">
   <meta name="keywords" content="photobooth rental Tampa, self-standing photobooth Tampa Bay, digital photobooth rental Wesley Chapel, wedding photobooth St. Pete, public venue photobooth">
   <meta name="author" content="Blue Moon Studios">
   <meta name="robots" content="index, follow">
@@ -148,7 +148,7 @@
     .hero-right-img { width: 100%; height: 100%; object-fit: cover; object-position: center top; opacity: 0.75; }
     .hero-right::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to right, var(--bg) 0%, transparent 25%), linear-gradient(to top, var(--bg) 0%, transparent 30%); pointer-events: none; }
     .price-chip { position: absolute; top: 40px; right: 32px; z-index: 2; background: var(--bg-2); border: 1px solid var(--line-warm); border-radius: var(--r-md); padding: 16px 22px; text-align: center; }
-    .price-chip-amount { font-family: var(--f-display); font-size: 2.8rem; line-height: 1; color: var(--fg); display: block; }
+    .price-chip-amount { font-family: var(--f-display); font-size: 2.2rem; line-height: 1; color: var(--fg); display: block; }
     .price-chip-label { font-size: 10px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--fg-3); display: block; margin-top: 4px; }
 
     /* ─── SERVICES ─── */
@@ -163,31 +163,9 @@
     .service-num { font-family: var(--f-display); font-size: 3.5rem; color: rgba(240,236,228,0.06); line-height: 1; margin-bottom: 20px; }
     .service-title { font-family: var(--f-ui); font-size: 14px; font-weight: 600; letter-spacing: 0.04em; color: var(--fg); margin-bottom: 14px; }
     .service-desc { font-size: 13.5px; color: var(--fg-3); line-height: 1.7; margin-bottom: 28px; flex-grow: 1; }
-    .service-price { font-family: var(--f-display); font-size: 2.2rem; color: var(--accent); letter-spacing: 0.02em; line-height: 1; margin-bottom: 4px; }
-    .service-price-note { font-size: 10.5px; color: var(--fg-3); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 24px; }
     .service-features { display: flex; flex-direction: column; gap: 7px; }
     .service-features li { font-size: 12.5px; color: var(--fg-2); display: flex; align-items: flex-start; gap: 8px; }
     .service-features li::before { content: '→'; color: var(--accent); font-size: 11px; margin-top: 2px; flex-shrink: 0; }
-
-    /* ─── PRICING CALCULATOR ─── */
-    .calc-section { margin-top: 50px; border: 1px solid var(--line); border-radius: var(--r-lg); overflow: hidden; }
-    .calc-top { padding: 32px clamp(28px, 4vw, 48px); border-bottom: 1px solid var(--line); display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
-    .calc-top-label { font-size: 10px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); margin-bottom: 6px; }
-    .calc-top-title { font-family: var(--f-ui); font-size: 18px; font-weight: 600; color: var(--fg); }
-    .calc-body { display: grid; grid-template-columns: 1fr 280px; }
-    .calc-inputs { padding: clamp(28px, 4vw, 48px); border-right: 1px solid var(--line); display: flex; flex-direction: column; gap: 28px; }
-    .calc-field label { display: block; font-size: 10.5px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--fg-3); margin-bottom: 12px; }
-    .calc-options { display: flex; flex-direction: column; gap: 6px; }
-    .calc-option { display: flex; align-items: center; gap: 10px; font-size: 13px; color: var(--fg-2); cursor: pointer; padding: 10px 14px; border: 1px solid var(--line); border-radius: var(--r-sm); transition: all 0.18s; }
-    .calc-option:hover { border-color: var(--line-warm); color: var(--fg); }
-    .calc-option input[type="radio"], .calc-option input[type="checkbox"] { accent-color: var(--accent); width: 14px; height: 14px; flex-shrink: 0; }
-    .calc-hours-row { display: flex; align-items: center; gap: 16px; }
-    .calc-hours-row input[type="range"] { flex: 1; accent-color: var(--accent); height: 3px; }
-    .calc-hours-val { font-family: var(--f-display); font-size: 2rem; color: var(--accent); line-height: 1; width: 52px; text-align: right; flex-shrink: 0; }
-    .calc-total-panel { padding: clamp(28px, 4vw, 48px); display: flex; flex-direction: column; justify-content: space-between; background: var(--bg-1); }
-    .calc-total-label { font-size: 10px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--fg-3); margin-bottom: 12px; }
-    .calc-total-amount { font-family: var(--f-display); font-size: clamp(3.5rem, 5vw, 5rem); line-height: 0.9; color: var(--fg); margin-bottom: 8px; }
-    .calc-total-note { font-size: 11px; color: var(--fg-3); line-height: 1.5; }
 
     /* ─── FAQ ─── */
     .faq-header { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: end; margin-bottom: 52px; }
@@ -225,7 +203,6 @@
       .cta-left { border-right: none; border-bottom: 1px solid var(--line); }
       .cta-right { padding-left: 0; }
     }
-    @media (max-width: 768px) { .calc-body { grid-template-columns: 1fr; } .calc-inputs { border-right: none; border-bottom: 1px solid var(--line); } }
   </style>
 </head>
 <body>
@@ -265,15 +242,15 @@
         <div class="hero-ctas">
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSeLmYdneIY1dy_6ed7LCDb09CWdvwEvTNIg1AmlZkELuOLvoA/viewform?usp=sharing&ouid=110282038741252949451" target="_blank" class="btn btn-primary">Book Your Date</a>
         </div>
-        <p class="hero-price-note">Starting at <strong>$80 / hour</strong> &nbsp;·&nbsp; No Delivery Fee &nbsp;·&nbsp; Venues Only</p>
+        <p class="hero-price-note"><strong>Custom Packages Available</strong> &nbsp;·&nbsp; No Delivery Fee &nbsp;·&nbsp; Venues Only</p>
       </div>
     </div>
 
     <div class="hero-right">
       <img src="photoboothpad.png" class="hero-right-img" alt="Digital photobooth kiosk" loading="eager" onerror="this.style.background='var(--bg-2)'">
       <div class="price-chip">
-        <span class="price-chip-amount">$80</span>
-        <span class="price-chip-label">per hour</span>
+        <span class="price-chip-amount">Quote</span>
+        <span class="price-chip-label">Upon Request</span>
       </div>
     </div>
   </header>
@@ -285,8 +262,8 @@
           <div>
             <span style="font-size:10.5px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--accent);">Our Packages</span>
             <h2 class="services-title" style="margin-top:16px;">
-              STRAIGHTFORWARD<br>
-              <em>pricing</em>
+              TAILORED<br>
+              <em>experiences</em>
             </h2>
           </div>
           <p class="services-lead">Pick the package that fits your event. Free props and an inflatable backdrop are included upon request!</p>
@@ -297,8 +274,6 @@
             <div class="service-num">01</div>
             <h3 class="service-title">Digital Photobooth</h3>
             <p class="service-desc">Our flagship sleek kiosk paired with professional-grade studio lighting. Unlimited high-res digital captures sent instantly via SMS/Email.</p>
-            <div class="service-price">$80</div>
-            <div class="service-price-note">per hour</div>
             <ul class="service-features">
               <li>Digital only (No physical prints)</li>
               <li>Free Props & Inflatable Backdrop (if requested)</li>
@@ -310,10 +285,8 @@
             <div class="service-num">02</div>
             <h3 class="service-title">Physical Prints Booth</h3>
             <p class="service-desc">Get the digital experience PLUS physical photo strips printed on the spot. Great for tangible party favors.</p>
-            <div class="service-price">$90</div>
-            <div class="service-price-note">per hour</div>
             <ul class="service-features">
-              <li>Up to 50 physical prints MAX</li>
+              <li>High-quality physical prints included</li>
               <li>Includes all digital features</li>
               <li>Free Props & Backdrop (if requested)</li>
             </ul>
@@ -321,89 +294,15 @@
 
           <article class="service-item">
             <div class="service-num">03</div>
-            <h3 class="service-title">Full Day Digital Rate</h3>
-            <p class="service-desc">Having a long event? Skip the hourly counting. Rent the digital booth for any time over 3 hours for one flat rate.</p>
-            <div class="service-price">$300</div>
-            <div class="service-price-note">Flat Rate (Over 3 Hours)</div>
+            <h3 class="service-title">Full Day Coverage</h3>
+            <p class="service-desc">Perfect for conferences, expos, or all-day celebrations requiring extended machine uptime and support.</p>
             <ul class="service-features">
-              <li>Entire event coverage (digital only)</li>
-              <li>Add unlimited prints for +$50 flat</li>
+              <li>Entire event coverage</li>
+              <li>Add unlimited physical prints</li>
               <li>Free Props & Backdrop (if requested)</li>
             </ul>
           </article>
         </div>
-
-        <div class="calc-section">
-          <div class="calc-top">
-            <div>
-              <div class="calc-top-label">Pricing Calculator</div>
-              <div class="calc-top-title">Estimate Your Cost</div>
-            </div>
-          </div>
-          <div class="calc-body">
-            <div class="calc-inputs">
-              <div class="calc-field">
-                <label>1. Select Base Package</label>
-                <div class="calc-options">
-                  <label class="calc-option">
-                    <input type="radio" name="calc_base" value="digital" checked onchange="calculateTotal()">
-                    Digital Booth — $80/hr
-                  </label>
-                  <label class="calc-option">
-                    <input type="radio" name="calc_base" value="physical" onchange="calculateTotal()">
-                    Physical Prints (Up to 50 max) — $90/hr
-                  </label>
-                  <label class="calc-option">
-                    <input type="radio" name="calc_base" value="fullday" onchange="calculateTotal()">
-                    Full Day Digital Rate (Above 3 Hours) — $300 Flat
-                  </label>
-                </div>
-              </div>
-
-              <div class="calc-field" id="hoursField">
-                <label>2. Number of Hours — <span id="hoursDisplay" style="color:var(--accent);">2</span> hrs</label>
-                <div class="calc-hours-row">
-                  <input type="range" id="calcHours" min="1" max="8" value="2" oninput="calculateTotal()">
-                  <div class="calc-hours-val" id="hoursVal">2</div>
-                </div>
-                <div style="font-size: 10.5px; color: var(--fg-3); margin-top: 8px; font-style: italic;">*Hours slider is disabled if the Full Day Flat Rate is selected.</div>
-              </div>
-
-              <div class="calc-field">
-                <label>3. Add-Ons & Freebies</label>
-                <div class="calc-options">
-                  <label class="calc-option">
-                    <input type="checkbox" id="addon_unlimited" value="50" onchange="calculateTotal()"> 
-                    Unlimited Prints Upgrade — $50 Flat Fee
-                  </label>
-                  <label class="calc-option" style="border-color: var(--accent); color: var(--fg);">
-                    <input type="checkbox" checked disabled> 
-                    Props & Inflatable Backdrop — FREE
-                  </label>
-                </div>
-              </div>
-            </div>
-
-            <div class="calc-total-panel">
-              <div>
-                <div class="calc-total-label">Estimated Total</div>
-                <div class="calc-total-amount" id="calcTotal">$160</div>
-                <div class="calc-total-note">Estimate only. No delivery fees in our service area.<br><strong>Public event venues only.</strong></div>
-              </div>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSeLmYdneIY1dy_6ed7LCDb09CWdvwEvTNIg1AmlZkELuOLvoA/viewform?usp=sharing&ouid=110282038741252949451" target="_blank" class="btn btn-primary" style="margin-top:32px;">Go to Booking Form</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="faq" style="background: var(--bg-1);">
-      <div class="wrap">
-        <div class="faq-header">
-          <h2 class="faq-title">PLEASE READ<br>BEFORE BOOKING</h2>
-          <p class="faq-lead">We want to make this as simple as possible. Please read these brief guidelines before filling out the form.</p>
-        </div>
-
         <div class="faq-list">
           <div class="faq-item">
             <button class="faq-btn" aria-expanded="false" onclick="toggleFaq(this)">
@@ -421,7 +320,7 @@
               <span class="faq-indicator"><i class="fa-solid fa-plus"></i></span>
             </button>
             <div class="faq-answer">
-              "Strips" are standard 4x6 prints that contain <strong>two identical strips of the exact same picture.</strong> So if you take 1 photo, the machine prints 1 sheet containing 2 strips so you can split it with a friend. Our $90/hr rate gives you up to 50 prints maximum. If you want unlimited prints, it's a flat $50 upgrade.
+              "Strips" are standard 4x6 prints that contain <strong>two identical strips of the exact same picture.</strong> So if you take 1 photo, the machine prints 1 sheet containing 2 strips so you can split it with a friend. Our base physical print package comes with a set amount of prints, but unlimited print upgrades are available.
             </div>
           </div>
 
@@ -483,44 +382,6 @@
   </main>
 
   <script>
-    /* ── Calculator Logic ── */
-    function calculateTotal() {
-      const baseType = document.querySelector('input[name="calc_base"]:checked').value;
-      const hoursSlider = document.getElementById('calcHours');
-      const hours = parseFloat(hoursSlider.value);
-      
-      document.getElementById('hoursDisplay').textContent = hours;
-      document.getElementById('hoursVal').textContent = hours;
-      
-      let total = 0;
-      const hoursField = document.getElementById('hoursField');
-
-      // Base pricing logic
-      if (baseType === 'digital') {
-        total = 80 * hours;
-        hoursField.style.opacity = '1';
-        hoursSlider.disabled = false;
-      } else if (baseType === 'physical') {
-        total = 90 * hours;
-        hoursField.style.opacity = '1';
-        hoursSlider.disabled = false;
-      } else if (baseType === 'fullday') {
-        total = 300; // Flat rate ignores hours slider
-        hoursField.style.opacity = '0.5';
-        hoursSlider.disabled = true;
-      }
-
-      // Add-on logic
-      if (document.getElementById('addon_unlimited').checked) {
-        total += 50;
-      }
-
-      document.getElementById('calcTotal').textContent = '$' + total;
-    }
-    
-    // Initialize calculator
-    calculateTotal();
-
     /* ── FAQ Toggle ── */
     function toggleFaq(btn) {
       const answer = btn.nextElementSibling;
