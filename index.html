@@ -50,8 +50,8 @@
       --bg-1:      #12151c;
       --bg-2:      #1a1e27;
       --fg:        #f5f4f1;
-      --fg-2:      #c7c9d1;   /* was too dim before; now passes body-text contrast */
-      --fg-3:      #8b8f9b;   /* used for captions/meta only, never for paragraphs */
+      --fg-2:      #c7c9d1;   
+      --fg-3:      #8b8f9b;   
       --accent:    #3b82f6;
       --accent-2:  #60a5fa;
       --accent-dim: rgba(59, 130, 246, 0.14);
@@ -124,7 +124,7 @@
     .strip-dot { width: 4px; height: 4px; border-radius: 50%; background: var(--accent-2); flex-shrink: 0; }
     @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 
-    /* ─── SECTION SEPARATOR (was near-invisible; now a legible, quiet divider) ─── */
+    /* ─── SECTION SEPARATOR ─── */
     .marquee-huge { font-family: var(--f-display); font-size: clamp(2.2rem, 4vw, 3.4rem); letter-spacing: 0.04em; color: var(--fg); background: var(--bg-1); white-space: nowrap; overflow: hidden; display: flex; align-items: center; padding-block: 26px; border-block: 1px solid var(--line); user-select: none; }
     .marquee-huge-track { display: flex; gap: 40px; width: max-content; animation: marqueeHuge 34s linear infinite; }
     .marquee-huge span::after { content: '•'; color: var(--accent-2); margin-left: 40px; }
@@ -132,9 +132,6 @@
 
     /* ─── HERO ─── */
     .hero { min-height: 88vh; display: grid; grid-template-columns: 1.05fr 0.95fr; align-items: stretch; position: relative; overflow: hidden; border-bottom: 1px solid var(--line); }
-
-    .hero-nav { position: absolute; top: clamp(20px, 4vw, 36px); left: clamp(24px, 4vw, 60px); z-index: 10; display: flex; align-items: center; gap: 12px; }
-    .hero-nav img { width: 44px; height: auto; border-radius: 8px; }
 
     .hero-left { padding: clamp(96px, 11vw, 130px) clamp(24px, 4vw, 60px) clamp(56px, 7vw, 90px) max(24px, calc((100vw - 1200px) / 2)); display: flex; flex-direction: column; justify-content: center; height: 100%; }
     .hero-eyebrow { font-size: 12px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent-2); display: flex; align-items: center; gap: 12px; margin-bottom: 26px; }
@@ -148,8 +145,6 @@
     .policy-box { display: block; margin-top: 22px; padding: 14px 18px; background: var(--bg-1); border: 1px solid var(--line); border-left: 3px solid var(--accent-2); font-size: 14px; color: var(--fg); border-radius: 0 var(--r-sm) var(--r-sm) 0; }
     .policy-box strong { color: var(--accent-2); }
     .hero-ctas { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; margin-top: 8px; }
-    .hero-price-note { font-size: 12px; color: var(--fg-3); letter-spacing: 0.04em; margin-top: 26px; }
-    .hero-price-note strong { color: var(--fg); font-weight: 700; }
     .hero-right { position: relative; height: 100%; overflow: hidden; border-left: 1px solid var(--line); background: var(--bg-2); }
     .hero-right-img { width: 100%; height: 100%; object-fit: cover; object-position: center top; opacity: 0.85; }
     .hero-right::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to right, var(--bg) 0%, transparent 20%), linear-gradient(to top, var(--bg) 0%, transparent 25%); pointer-events: none; }
@@ -178,8 +173,7 @@
     .service-item:last-child { border-right: none; }
     .service-item:hover { background: var(--bg-2); }
     .service-num { font-family: var(--f-display); font-size: 1.6rem; color: var(--fg-3); line-height: 1; margin-bottom: 16px; letter-spacing: 0.05em; }
-    .service-title { font-family: var(--f-ui); font-size: 15px; font-weight: 700; letter-spacing: 0.02em; color: var(--fg); margin-bottom: 8px; }
-    .service-price { font-family: var(--f-display); font-size: 2.1rem; color: var(--accent-2); margin-bottom: 16px; line-height: 1; }
+    .service-title { font-family: var(--f-ui); font-size: 15px; font-weight: 700; letter-spacing: 0.02em; color: var(--fg); margin-bottom: 16px; }
     .service-desc { font-size: 14px; color: var(--fg-2); line-height: 1.7; margin-bottom: 26px; flex-grow: 1; }
     .service-desc em { color: var(--fg); font-style: normal; font-weight: 600; }
     .service-features { display: flex; flex-direction: column; gap: 8px; }
@@ -218,7 +212,6 @@
       .hero { grid-template-columns: 1fr; min-height: auto; }
       .hero-right { height: 380px; border-left: none; border-top: 1px solid var(--line); order: -1; }
       .hero-left { padding-top: clamp(28px, 6vw, 48px); }
-      .hero-nav { position: static; margin: 20px 24px 0; }
       .services-header, .faq-header { grid-template-columns: 1fr; gap: 20px; }
       .services-list { grid-template-columns: 1fr; }
       .service-item { border-right: none; border-bottom: 1px solid var(--line); }
@@ -247,9 +240,6 @@
   </div>
 
   <header class="hero" id="top">
-    <div class="hero-nav">
-      <img src="logohead.png" alt="Blue Moon Studios logo" onerror="this.style.display='none'">
-    </div>
     <div class="hero-left">
       <div>
         <p class="hero-eyebrow">Ran By Gen Z, For Gen Z</p>
@@ -325,7 +315,6 @@
           <article class="service-item">
             <div class="service-num">01</div>
             <h3 class="service-title">Digital Vibe Package</h3>
-            <div class="service-price">$450</div>
             <p class="service-desc">3-hour rental. Our flagship sleek kiosk paired with professional-grade studio lighting. Unlimited high-res digital captures sent instantly via SMS/Email.</p>
             <ul class="service-features">
               <li>Digital only (No physical prints)</li>
@@ -337,7 +326,6 @@
           <article class="service-item">
             <div class="service-num">02</div>
             <h3 class="service-title">Physical Print Package</h3>
-            <div class="service-price">$600</div>
             <p class="service-desc">3-hour rental. Get the digital experience PLUS physical photo strips. <em>Full transparency: Prints are expensive for us to produce, so we offer them at cost!</em></p>
             <ul class="service-features">
               <li>Max 50-60 high-quality prints per hour</li>
@@ -349,7 +337,6 @@
           <article class="service-item">
             <div class="service-num">03</div>
             <h3 class="service-title">Full Day Coverage</h3>
-            <div class="service-price">Custom Quote</div>
             <p class="service-desc">Perfect for conferences, expos, or all-day celebrations requiring extended machine uptime and support.</p>
             <ul class="service-features">
               <li>Entire event coverage</li>
