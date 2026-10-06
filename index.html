@@ -216,7 +216,7 @@
     .hero-grid { display: grid; grid-template-columns: 1.05fr 0.95fr; align-items: center; gap: 40px; padding: clamp(56px, 7vw, 96px) 0; }
     .hero-h1 { font-family: var(--f-display); font-size: clamp(3.4rem, 6vw, 5.6rem); line-height: 0.95; letter-spacing: 0.02em; color: var(--fg); margin-bottom: 18px; }
     .hero-h1 .grad { color: var(--fg); }
-    .hero-h1 em { font-family: var(--f-serif); font-style: italic; font-size: 0.42em; letter-spacing: 0; display: block; margin-top: 10px; color: var(--fg-3); -webkit-text-fill-color: var(--fg-3); }
+    .hero-h1 em { font-family: var(--f-serif); font-style: italic; font-size: 0.42em; letter-spacing: 0; display: block; margin-top: 10px; color: var(--fg-3); }
     .hero-sub { font-size: 17px; color: var(--fg-2); line-height: 1.7; max-width: 500px; margin-bottom: 26px; }
     .hero-sub strong { color: var(--fg); }
     .price-pill {
@@ -474,6 +474,11 @@
           <div class="gallery-card"><img src="work2.png" alt="Party guests taking photobooth pictures in New Tampa" loading="lazy" onerror="this.style.background='var(--bg-mute)'"></div>
           <div class="gallery-card"><img src="pic4.png" alt="Blue Moon Studios digital photobooth kiosk at an event" loading="lazy" onerror="this.style.background='var(--bg-mute)'"></div>
           <div class="gallery-card"><img src="work3.png" alt="Event photobooth experience in Wesley Chapel Florida" loading="lazy" onerror="this.style.background='var(--bg-mute)'"></div>
+          <div class="gallery-card"><img src="pic5.png" alt="Corporate event attendees smiling in front of the photobooth" loading="lazy" onerror="this.style.background='var(--bg-mute)'"></div>
+          <div class="gallery-card"><img src="work4.png" alt="Tampa quinceañera photobooth setup with custom backdrop" loading="lazy" onerror="this.style.background='var(--bg-mute)'"></div>
+          <div class="gallery-card"><img src="pic6.png" alt="Group of friends holding fun photobooth props" loading="lazy" onerror="this.style.background='var(--bg-mute)'"></div>
+          <div class="gallery-card"><img src="work5.png" alt="Close-up of the digital photobooth ring light and touch screen" loading="lazy" onerror="this.style.background='var(--bg-mute)'"></div>
+          <div class="gallery-card"><img src="pic7.png" alt="Wedding guests taking a boomerang video in Tampa Bay" loading="lazy" onerror="this.style.background='var(--bg-mute)'"></div>
         </div>
       </div>
     </section>
@@ -688,10 +693,24 @@
       const open = answer.classList.toggle('open');
       btn.setAttribute('aria-expanded', open);
     }
+    
+    // Intersection Observer for scroll animations
     const io = new IntersectionObserver((entries) => {
       entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
     }, { threshold: 0.12 });
     document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+    // Enable horizontal scrolling with mouse wheel on the gallery
+    const gallery = document.querySelector('.scrolling-wrapper');
+    if (gallery) {
+      gallery.addEventListener('wheel', (e) => {
+        // Check if deltaY is present (vertical scroll)
+        if (e.deltaY !== 0) {
+          e.preventDefault(); // Stop vertical scroll on the page
+          gallery.scrollLeft += e.deltaY; // Scroll horizontally instead
+        }
+      }, { passive: false }); // Requires passive: false to allow e.preventDefault()
+    }
   </script>
 </body>
 </html>
